@@ -1,5 +1,8 @@
+<head>
+	<meta name="google-site-verification" content="Yl7pSQTaubSiv0nj4cppnJNaSq1A73Zv1woqNHhvT1Y" />
+</head>
 <?php
-
+header('Location: http://futbolfemenino.pe/unete/'); //exit;
 /**
  * @file
  * The PHP page that serves all page requests on a Drupal installation.
