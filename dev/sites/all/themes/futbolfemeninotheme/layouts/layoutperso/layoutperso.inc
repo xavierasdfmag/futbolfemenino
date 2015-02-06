@@ -9,9 +9,9 @@
 $plugin = array(
   'title' => t('Two perso'),
   'category' => t('Columns: 2'),
-  'icon' => 'twocol_bricks.png',
-  'theme' => 'panels_twocol_bricks',
-  'css' => 'twocol_bricks.css',
+  'icon' => 'layoutperso.png',
+  'theme' => 'layoutperso',
+  'css' => 'layoutperso.css',
   'regions' => array(
     'top' => t('Top'),
     'left_above' => t('Left above'),
