@@ -3,10 +3,19 @@ description = Tema creado para la revista Futbol femenino.
 core = 7.x
 engine = phptemplate
 stylesheets[all][] = css/style.css
+
+regions[header] = Header
+regions[highlighted] = Highlighted
+regions[help] = Help
+regions[content] = Content
+regions[sidebar_first] = Left sidebar
+regions[sidebar_second] = Right sidebar
+regions[footer] = Footer
+
+
 regions[left] = Left sidebar
 regions[right] = Right sidebar
 regions[content] = Content
-regions[header] = Header
-regions[footer] = Footer
+
 
 plugins[panels][layouts] = layouts
