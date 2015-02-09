@@ -29,52 +29,52 @@
  */
 ?>
 <div class="row">
-  <div class="small-12 columns"><?php print $content['header_institucional']; ?></div>
+  <div class="large-12 columns"><?php print $content['header_institucional']; ?></div>
 </div>
 <div class="row">
-  <div class="small-12 columns"><?php print $content['header_logo']; ?></div>
+  <div class="large-12 columns"><?php print $content['header_logo']; ?></div>
 </div>
 <div class="row">
-  <div class="small-12 columns"><?php print $content['header_menu']; ?></div>
+  <div class="large-12 columns"><?php print $content['header_menu']; ?></div>
 </div>
 <div class="row">
-  <div class="small-12 columns"><?php print $content['top_portada']; ?></div>
+  <div class="large-12 columns"><?php print $content['top_portada']; ?></div>
 </div>
 <div class="row">
-  <div class="small-12 columns"><?php print $content['top_slider']; ?></div>
+  <div class="large-12 columns"><?php print $content['top_slider']; ?></div>
 </div>
 <div class="row">
-  <div class="small-12 medium-12 large-8 columns">
+  <div class="large-8 columns">
     <div class="row">
-      <div class="small-12 columns"><?php print $content['middle_type_one']; ?></div>
+      <div class="large-12 columns"><?php print $content['middle_type_one']; ?></div>
     </div>
     <div class="row">
-      <div class="small-12 columns"><?php print $content['middle_type_two']; ?></div>
+      <div class="large-12 columns"><?php print $content['middle_type_two']; ?></div>
     </div>
     <div class="row">
-      <div class="small-12 columns"><?php print $content['middle_type_three']; ?></div>
+      <div class="large-12 columns"><?php print $content['middle_type_three']; ?></div>
     </div>
   </div>
 
-  <div class="small-12 medium-12 large-4 columns">
+  <div class="large-4 columns">
     <div class="row">
-      <div class="small-12 columns"><?php print $content['middle_suscription']; ?></div>
+      <div class="large-12 columns"><?php print $content['middle_suscription']; ?></div>
     </div>
     <div class="row">
-      <div class="small-12 columns"><?php print $content['middle_promo']; ?></div>
+      <div class="large-12 columns"><?php print $content['middle_promo']; ?></div>
     </div>    
     
   </div>
 </div>
 
 <div class="row">
-  <div class="small-12 columns"><?php print $content['banner_sponsor']; ?></div>
+  <div class="large-12 columns"><?php print $content['banner_sponsor']; ?></div>
 </div>
 <div class="row">
-  <div class="small-12 columns"><?php print $content['news_sponsor']; ?></div>
+  <div class="large-12 columns"><?php print $content['news_sponsor']; ?></div>
 </div>
 <div class="row">
-  <div class="small-12 columns"><?php print $content['footer']; ?></div>
+  <div class="large-12 columns"><?php print $content['footer']; ?></div>
 </div>
 
 
