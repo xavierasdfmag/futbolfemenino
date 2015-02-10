@@ -86,7 +86,7 @@
     <div class="small-12 columns sec-left single-cabecera">
       <p class="single-tag">
         <?php 
-          $term=taxonomy_term_load($node->field_tag['und'][0]['tid']);
+          $term=taxonomy_term_load_multiple($node->field_tag['und'][0]['tid']);
           // $result=field_view_field('taxonomy_term',$term,'field_tx_headline','text');
           print_r ($term);
         ?>
