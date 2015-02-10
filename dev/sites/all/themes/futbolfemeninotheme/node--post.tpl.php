@@ -88,7 +88,7 @@
         <?php 
           foreach ($node->field_tag['und'] as $delta => $value) {
             $term = taxonomy_term_load($value['tid']);
-            print $term->name;
+            print $term->name.' ';
             // print taxonomy_term_load($value['tid']['name']);
           }
 
