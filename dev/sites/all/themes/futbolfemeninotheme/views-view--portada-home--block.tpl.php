@@ -1,4 +1,4 @@
 <p>???</p>
-<?php print fields['title']->content; ?>
-<?php //print_r($view); ?>
+<?php //print fields['title']->content; ?>
+<?php print_r($view); ?>
 <p>???</p>
