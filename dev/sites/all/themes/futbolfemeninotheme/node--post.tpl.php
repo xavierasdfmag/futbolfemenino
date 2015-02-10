@@ -111,7 +111,7 @@
         </div>
         <div class="small-12 columns single-contenido">
           <?php 
-            $field_body = $node->field_body['und']['0']['value'];
+            $field_body = $node->body['und']['0']['value'];
             print $field_body;
           ?>     
           
