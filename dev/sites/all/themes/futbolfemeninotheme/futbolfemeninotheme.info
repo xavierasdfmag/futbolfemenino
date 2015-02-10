@@ -3,6 +3,9 @@ description = Tema creado para la revista Futbol femenino.
 core = 7.x
 engine = phptemplate
 stylesheets[all][] = css/app.css
+scripts[] = js/vendor/jquery.js
+scripts[] = js/foundation.min.js.js
+scripts[] = js/app.js
 
 regions[header] = Header
 regions[highlighted] = Highlighted
