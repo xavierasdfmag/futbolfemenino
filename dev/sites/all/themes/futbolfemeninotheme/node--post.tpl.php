@@ -86,13 +86,13 @@
     <div class="small-12 columns sec-left single-cabecera">
       <p class="single-tag">
         <?php 
-          // foreach ($node->field_tag['und'] as $delta => $value) {
-          //   print (taxonomy_term_load($value['tid']));
-          // }
+          foreach ($node->field_tag['und'] as $delta => $value) {
+            print (taxonomy_term_load($value['tid']));
+          }
 
-          $term=taxonomy_term_load($node->field_tag['und'][0]['tid']);
-          $result=field_view_field('taxonomy_term',$term,'field_tag','text');
-          print $result;
+          // $term=taxonomy_term_load($node->field_tag['und'][0]['tid']);
+          // $result=field_view_field('taxonomy_term',$term,'field_tag','text');
+          // print $result;
         ?>
       </p>
       <p class="single-title"><?php print $title; ?></p>
