@@ -86,7 +86,7 @@
     <div class="small-12 columns sec-left single-cabecera">
       <p class="single-tag">
         <?php 
-          foreach ($node->field_tag['und'] as $delta => $value) {
+          foreach ($node->field_tag['und'] as $value) {
             $term = taxonomy_term_load($value['tid']);
             print $term->name.' ';
             // print taxonomy_term_load($value['tid']['name']);
