@@ -1,4 +1,3 @@
 <p>???</p>
-<?php //print fields['title']->content; ?>
-<?php print_r($view); ?>
+<?php kpr($fields); ?>
 <p>???</p>
