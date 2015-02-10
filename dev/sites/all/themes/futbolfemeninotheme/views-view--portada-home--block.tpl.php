@@ -1,3 +1,7 @@
 <p>???</p>
-<?php print_r($fields); ?>
+<?php 
+	dpm($row);
+	kpr($row);
+	print_r($row);
+?>
 <p>???</p>
