@@ -81,7 +81,7 @@
  */
 ?>
 
-  <?php print_r($node); ?>  
+  <?php //print_r($node); ?>  
   <div class="row">
     <div class="small-12 columns sec-left single-cabecera">
       <p class="single-tag">
