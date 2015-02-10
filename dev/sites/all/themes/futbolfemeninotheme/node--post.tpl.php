@@ -86,8 +86,9 @@
     <div class="small-12 columns sec-left single-cabecera">
       <p class="single-tag">
         <?php 
-          $field_tag = $node->field_tag['und']['0']['value'];
-          print $field_tag;
+          $term=taxonomy_term_load($node->field_hotel_tx_atmosphere['und'][0]['tid']);
+          $result=field_view_field('taxonomy_term',$term,'field_tag','text');
+          print render($result);
         ?>
       </p>
       <p class="single-title"><?php print $title; ?></p>
