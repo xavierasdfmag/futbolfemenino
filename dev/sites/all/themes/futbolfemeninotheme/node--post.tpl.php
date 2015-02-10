@@ -86,11 +86,10 @@
     <div class="small-12 columns sec-left single-cabecera">
       <p class="single-tag">
         <?php 
-          foreach ($node->field_tag['und'] as $value) {
-            $term = taxonomy_term_load($value['tid']);
-            print $term->name.' ';
-            // print taxonomy_term_load($value['tid']['name']);
-          }
+          // foreach ($node->field_tag['und'] as $value) {
+          //   $term = taxonomy_term_load($value['tid']);
+          //   print $term->name.' ';
+          // }
 
           // $term=taxonomy_term_load($node->field_tag['und'][0]['tid']);
           // $result=field_view_field('taxonomy_term',$term,'field_tx_headline','text');
