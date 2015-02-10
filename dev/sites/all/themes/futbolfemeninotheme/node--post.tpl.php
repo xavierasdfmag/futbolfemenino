@@ -91,8 +91,8 @@
           }
 
           // $term=taxonomy_term_load($node->field_tag['und'][0]['tid']);
-          // $result=field_view_field('taxonomy_term',$term,'field_tag','text');
-          // print $result;
+          // $result=field_view_field('taxonomy_term',$term,'field_tx_headline','text');
+          // print_r ($term);
         ?>
       </p>
       <p class="single-title"><?php print $title; ?></p>
