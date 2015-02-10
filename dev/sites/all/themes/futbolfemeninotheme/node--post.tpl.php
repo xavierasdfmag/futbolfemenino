@@ -84,9 +84,9 @@
   
   <div class="row">
     <div class="small-12 columns sec-left single-cabecera">
-      <p class="single-tag"><?php print $content['$field_tag']; ?></p>
+      <p class="single-tag"><?php print $content['field_tag']; ?></p>
       <p class="single-title"><?php print $title; ?></p>
-      <p class="single-llamada"><?php print $content['$field_llamada']; ?></p>
+      <p class="single-llamada"><?php print $content['field_llamada']; ?></p>
     </div>
   </div>
 
