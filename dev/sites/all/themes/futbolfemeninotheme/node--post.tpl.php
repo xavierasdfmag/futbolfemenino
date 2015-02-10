@@ -81,12 +81,12 @@
  */
 ?>
 
-  
+  <?php print_r($node); ?>  
   <div class="row">
     <div class="small-12 columns sec-left single-cabecera">
-      <p class="single-tag"><?php print $content['field_tag']; ?></p>
+      <p class="single-tag">SUB 20</p>
       <p class="single-title"><?php print $title; ?></p>
-      <p class="single-llamada"><?php print $content['field_llamada']; ?></p>
+      <p class="single-llamada">Entrenan tanto que sus papas piensan que están de compras. Inefables.</p>
     </div>
   </div>
 
@@ -96,11 +96,18 @@
     <div class="small-12 large-8 columns sec-left">
       <div class="row">
         <div class="small-12 columns single-img-portada">
-          <?php print render($content['field_imagen']); ?>
           <img src="../img/not-type-one.png"> 
         </div>
         <div class="small-12 columns single-contenido">
-          <?php print $body; ?>       
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pretium, justo et volutpat ultricies, ante elit fringilla orci, at aliquet neque diam et dolor. Nullam suscipit blandit varius. Phasellus euismod aliquam odio. Nunc fermentum magna at varius sollicitudin. In hac habitasse platea dictumst. Nam vestibulum lacus quis nibh faucibus ullamcorper. Proin sit amet dignissim augue, ac vestibulum neque. Pellentesque egestas urna vel turpis scelerisque, ac fermentum mauris iaculis. Proin lorem arcu, hendrerit id tristique faucibus, eleifend nec nunc. Fusce scelerisque sed quam placerat efficitur. Morbi sed nunc nibh. Praesent fermentum massa sed sagittis aliquet. In imperdiet lorem erat, rhoncus semper sapien porttitor ut. Phasellus pulvinar vel magna vel malesuada.</p>
+
+          <p>In mollis egestas aliquam. In vitae posuere massa. Donec tempus mauris ligula, in commodo quam gravida eget. Praesent sit amet varius dui, aliquam vestibulum dui. Praesent vitae elementum est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin metus nisl, maximus et elit ut, facilisis tincidunt lectus. Sed sit amet vestibulum massa. Pellentesque bibendum sagittis nisl, nec gravida nunc volutpat et. Aliquam erat volutpat. Aenean eget libero at orci pellentesque dictum. Nunc scelerisque lectus a commodo euismod. Sed arcu dui, elementum at turpis ut, scelerisque sagittis enim.</p>
+
+          <p>Quisque mi odio, viverra sed malesuada euismod, feugiat id leo. Nullam lacus felis, lobortis ut luctus varius, sodales vitae magna. Ut dui orci, congue eu massa vel, blandit eleifend sapien. Curabitur egestas ut arcu eget tincidunt. Cras tincidunt lectus id massa venenatis fringilla eget a nisl. Mauris iaculis et libero sit amet dictum. Vestibulum nunc sem, auctor rhoncus sagittis nec, aliquet vel enim. Praesent quam lectus, mollis non est ut, maximus tincidunt mi. Maecenas at elementum velit. Quisque ullamcorper nulla in magna accumsan lacinia. Quisque iaculis scelerisque erat. Nulla nisl metus, condimentum blandit elit at, scelerisque consectetur nunc.</p>
+
+          <img src="../img/not-type-one.png">       
+          
         </div>
 
 
