@@ -98,7 +98,7 @@
           <?php endif; ?>
 
           <?php if ($site_slogan): ?>
-            <div id="site-slogan"><?php print //$site_slogan; ?></div>
+            <div id="site-slogan"><?php //print $site_slogan; ?></div>
           <?php endif; ?>
         </div> <!-- /#name-and-slogan -->
       <?php endif; ?>
