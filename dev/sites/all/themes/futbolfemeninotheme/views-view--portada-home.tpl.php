@@ -1,4 +1,4 @@
-<?php dpm($fields); ?>
+<?php dpm($rows); ?>
 <div class="title">
-  <?php print $fields["title"]->content; ?>
+  <?php print_r ($rows); ?>
 </div>
