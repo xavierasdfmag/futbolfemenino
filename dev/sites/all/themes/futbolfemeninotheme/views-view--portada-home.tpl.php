@@ -1,1 +1,4 @@
-<?php print 'desde display ouput';?>
+<?php dpm($fields); ?>
+<div class="title">
+  <?php print $fields["title"]->content; ?>
+</div>
