@@ -1,5 +1,5 @@
 <p>???</p>
 <?php
-dsm($fields);
+print $fields['title']->content;
 ?>
 <p>???</p>
