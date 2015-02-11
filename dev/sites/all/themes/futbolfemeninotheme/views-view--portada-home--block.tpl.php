@@ -1,5 +1,5 @@
-<?php dpm($fields); ?>
-<div class="title">
-  <?php print $fields["title"]->content; ?>
-</div>
+<p>???</p>
+<?php
+dsm($fields);
+?>
 <p>???</p>
