@@ -85,6 +85,7 @@
   <div class="row">
     <div class="small-12 columns sec-left single-cabecera">
       <p class="single-tag">
+        <?php print $terms; ?>
         <?php 
           // foreach ($node->field_tag['und'] as $value) {
           //   $term = taxonomy_term_load($value['tid']);
@@ -116,11 +117,7 @@
           <!-- <img src="../img/not-type-one.png">  -->
         </div>
         <div class="small-12 columns single-contenido">
-          <?php 
-            $field_body = $node->body['und']['0']['value'];
-            print $field_body;
-          ?>     
-          
+          <?php print $content; ?>     
         </div>
 
 
