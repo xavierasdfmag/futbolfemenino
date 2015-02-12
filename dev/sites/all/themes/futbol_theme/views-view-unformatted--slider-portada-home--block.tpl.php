@@ -11,7 +11,7 @@
       <div class="row">
 				<?php
 					for ($x=0;$x<4; $x++)
-						print $row[$x];
+						print $rows[$x];
 				?>
       </div>
     </li>
