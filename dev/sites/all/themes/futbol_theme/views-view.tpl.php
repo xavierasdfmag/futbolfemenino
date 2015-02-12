@@ -28,7 +28,7 @@
  */
 ?>
 
-  <?php //print $rows; ?>
+  <?php print $rows; ?>
 
 <?php if ($pager): ?>
   <?php print $pager; ?>
