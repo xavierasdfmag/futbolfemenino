@@ -1,15 +1,13 @@
-<div class="row slider-portada show-for-large-up">
-  <div class="small-12 columns padding-20">
-    <ul class="example-orbit-content" data-orbit>
-      <li data-orbit-slide="headline-1">
-        <div class="row">
+<div class="small-12 columns padding-20">
+  <ul class="example-orbit-content" data-orbit>
+    <li data-orbit-slide="headline-1">
+      <div class="row">
 
-				  <?php foreach ($rows as $id => $row): ?>
-				    <?php print $row;?>
-					<?php endforeach; ?>
+			  <?php foreach ($rows as $id => $row): ?>
+			    <?php print $row;?>
+				<?php endforeach; ?>
 
-        </div>
-      </li>          
-    </ul>  
-  </div>
+      </div>
+    </li>          
+  </ul>  
 </div>
