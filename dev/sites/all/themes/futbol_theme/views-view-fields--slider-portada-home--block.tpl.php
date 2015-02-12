@@ -8,15 +8,17 @@
 	// kpr($fields);
 	// dpm($fields);
 	$title = $fields['title']->content;
-	$body = $fields['body']->content;
+	$llamada = $fields['field_llamada']->content;
 	$image = $fields['field_imagen']->content;
 ?>
-<img src="<?php print $image; ?>">
-<figcaption>
+<div class="small-4 columns">
   <div class="row">
-    <div class="medium-4 columns portada">
-      <p class="tag">BALON DE ORO</p>
-      <p class="title"><?php print $title; ?></p>
+    <div class="small-4 columns imagen">
+      <img src="<?php print $image; ?>">
+    </div>
+    <div class="small-8 columns noticia">
+      <p class="llamada"><?php print $llamada; ?></p>
+      <p class="titulo"><?php print $title; ?></p>
     </div>
   </div>
-</figcaption>
+</div>
