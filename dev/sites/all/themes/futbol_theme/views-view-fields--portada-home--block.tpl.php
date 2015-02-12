@@ -6,6 +6,7 @@
   $pathfile = variable_get('file_public_path', conf_path() . '/files/'); 
 
 	kpr($fields);
+	dpm($fields);
 	$title = $fields['title']->content;
 	$body = $fields['body']->content;
 	$image = $fields['field_imagen']->content;
