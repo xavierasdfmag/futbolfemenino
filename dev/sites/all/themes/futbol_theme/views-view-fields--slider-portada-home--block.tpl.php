@@ -8,7 +8,7 @@
 	// kpr($fields);
 	// dpm($fields);
 	$title = $fields['title']->content;
-	$llamada = $fields['field_llamada']->content;
+	$tag = $fields['field_tag']->content;
 	$image = $fields['field_imagen']->content;
 ?>
 <div class="small-4 columns">
@@ -17,7 +17,7 @@
       <img src="<?php print $image; ?>">
     </div>
     <div class="small-8 columns noticia">
-      <p class="llamada"><?php print $llamada; ?></p>
+      <p class="llamada"><?php print $tag; ?></p>
       <p class="titulo"><?php print $title; ?></p>
     </div>
   </div>
