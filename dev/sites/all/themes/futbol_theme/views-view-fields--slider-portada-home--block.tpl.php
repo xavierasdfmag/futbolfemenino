@@ -14,16 +14,18 @@
 
 <?php
   switch ($id) {
-    case 1: ?>
-      <li data-orbit-slide="headline-1">
-        <div class="row">
-      <?php
+    case 1: 
+      echo "
+      <li data-orbit-slide='headline-1'>
+        <div class='row'>
+      ";
       break;
 
-    case 4: ?>
-      <li data-orbit-slide="headline-2">
-        <div class="row">
-      <?php
+    case 4:
+      echo "
+      <li data-orbit-slide='headline-1'>
+        <div class='row'>
+      ";
       break;        
   }
 ?>
@@ -42,16 +44,18 @@
 
 <?php
   switch ($id) {
-    case 3: ?>
+    case 3:
+      echo "
         </div>
       </li>
-      <?php
+      ";
       break;
 
-    case 6: ?>
+    case 6:
+      echo "
         </div>
       </li>
-      <?php
+      ";
       break;          
   }
 ?>
