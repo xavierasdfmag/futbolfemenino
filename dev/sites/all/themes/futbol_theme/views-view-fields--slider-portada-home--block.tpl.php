@@ -12,23 +12,7 @@
 	$image = $fields['field_imagen']->content;
 ?>
 
-<?php
-  switch ($id) {
-    case 1: 
-      echo "
-      <li data-orbit-slide='headline-1'>
-        <div class='row'>
-      ";
-      break;
 
-    case 4:
-      echo "
-      <li data-orbit-slide='headline-1'>
-        <div class='row'>
-      ";
-      break;        
-  }
-?>
 
 <div class="small-4 columns">
   <div class="row">
@@ -42,20 +26,4 @@
   </div>
 </div>
 
-<?php 
-  switch ($id) {
-    case 3:
-      echo "
-        </div>
-      </li>
-      ";
-      break;
 
-    case 6:
-      echo "
-        </div>
-      </li>
-      ";
-      break;          
-  }
-?>
