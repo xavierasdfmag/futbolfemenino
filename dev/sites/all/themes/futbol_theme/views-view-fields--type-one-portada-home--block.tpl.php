@@ -15,7 +15,7 @@
 
 <?php
   switch ($id) {
-    case 11: ?>
+    case 1: ?>
         <div class="small-12 columns">
           <p class="title-section"><?php print $tag; ?></p>
         </div>
@@ -30,15 +30,15 @@
       <?php
       break;
 
-    case 14: ?>
-          <li><?php print $title+' '+$id; ?></li>
+    case 4: ?>
+          <li><?php print $title; ?></li>
         </ul>
       </div>
       <?php
       break;      
     
     default: ?>
-        <li><?php print $title+' '+$id; ?></li>
+        <li><?php print $title; ?></li>
       <?php
       break;
   }
