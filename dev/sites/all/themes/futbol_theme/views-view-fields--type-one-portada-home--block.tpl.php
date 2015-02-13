@@ -14,26 +14,32 @@
 ?>
 
 <?php
-  if ($id == 11) { ?>
-  <div class="small-12 columns">
-    <p class="title-section"><?php print $tag; ?></p>
-  </div>
-  <div class="small-12 medium-8 columns">
-    <h3 class="title-news"><?php print $title; ?></h3>
-    <p class="bajada"><?php print $texto_corto; ?></p>
-    <img src="<?php print $image; ?>">
+  switch ($id) {
+    case 11: ?>
+        <div class="small-12 columns">
+          <p class="title-section"><?php print $tag; ?></p>
+        </div>
+        <div class="small-12 medium-8 columns">
+          <h3 class="title-news"><?php print $title; ?></h3>
+          <p class="bajada"><?php print $texto_corto; ?></p>
+          <img src="<?php print $image; ?>">
+          
+        </div>
+        <div class="small-12 medium-4 columns">
+          <ul>
+      <?php
+      break;
+
+    case 14: ?>
+          <li><?php print $title; ?></li>
+        </ul>
+      </div>
+      <?php
+      break;      
     
-  </div>
-  <div class="small-12 medium-4 columns">
-    <ul>
-<?php
-  }elseif ($id == 14) { ?>
-      <li><?php print $title; ?></li>
-    </ul>
-  </div>
-  <?php
-  }else{ ?>
-      <li><?php print $title; ?></li>
-  <?php
+    default: ?>
+        <li><?php print $title; ?></li>
+      <?php
+      break;
   }
 ?>
