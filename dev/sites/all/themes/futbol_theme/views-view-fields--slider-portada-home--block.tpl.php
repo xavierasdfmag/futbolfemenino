@@ -24,13 +24,7 @@
       <li data-orbit-slide="headline-2">
         <div class="row">
       <?php
-      break;
-
-    case 7: ?>
-      <li data-orbit-slide="headline-3">
-        <div class="row">
-      <?php
-      break;            
+      break;        
   }
 ?>
 
@@ -58,12 +52,6 @@
         </div>
       </li>
       <?php
-      break;
-
-    case 9: ?>
-        </div>
-      </li>
-      <?php
-      break;            
+      break;          
   }
 ?>
