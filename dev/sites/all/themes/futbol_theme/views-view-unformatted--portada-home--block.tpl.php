@@ -4,4 +4,4 @@
 	<?php endforeach; ?>
 </figure>   -->
 
-<?php print_r ($rows[0]); ?>
+<?php var_dump($rows[0]); ?>
