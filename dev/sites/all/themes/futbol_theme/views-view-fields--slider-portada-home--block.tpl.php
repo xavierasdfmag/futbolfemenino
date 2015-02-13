@@ -37,7 +37,7 @@
     </div>
     <div class="small-8 columns noticia">
       <p class="llamada"><?php print $tag; ?></p>
-      <p class="titulo"><?php print $title; ?></p>
+      <p class="titulo"><?php print $id; ?></p>
     </div>
   </div>
 </div>

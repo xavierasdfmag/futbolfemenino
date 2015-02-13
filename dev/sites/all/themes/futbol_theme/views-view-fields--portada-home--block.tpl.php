@@ -20,7 +20,7 @@
         <div class="row">
           <div class="medium-4 columns portada">
             <p class="tag"><?php print $tag; ?></p>
-            <p class="title"><?php print $title; ?></p>
+            <p class="title"><?php print $id; ?></p>
           </div>
           <div class="medium-3 columns right tentativas">
       <?php
@@ -30,7 +30,7 @@
             <div class="row">
               <div class="small-12 columns tentativa">
                 <p class="tag"><?php print $tag; ?></p>
-                <p class="title"><?php print $title; ?></p>
+                <p class="title"><?php print $id; ?></p>
               </div>
             </div>
           </div>
@@ -43,7 +43,7 @@
         <div class="row">
           <div class="small-12 columns tentativa">
             <p class="tag"><?php print $tag; ?></p>
-            <p class="title"><?php print $title; ?></p>
+            <p class="title"><?php print $id; ?></p>
           </div>
         </div>
       <?php
