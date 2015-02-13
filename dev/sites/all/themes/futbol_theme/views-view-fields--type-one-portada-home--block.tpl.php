@@ -31,14 +31,14 @@
       break;
 
     case 14: ?>
-          <li><?php print $title; ?></li>
+          <li><?php print $title+' '+$id; ?></li>
         </ul>
       </div>
       <?php
       break;      
     
     default: ?>
-        <li><?php print $title; ?></li>
+        <li><?php print $title+' '+$id; ?></li>
       <?php
       break;
   }
