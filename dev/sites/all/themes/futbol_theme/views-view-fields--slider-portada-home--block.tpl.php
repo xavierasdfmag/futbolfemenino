@@ -11,6 +11,29 @@
 	$tag = $fields['field_tag']->content;
 	$image = $fields['field_imagen']->content;
 ?>
+
+<?php
+  switch ($id) {
+    case 1: ?>
+      <li data-orbit-slide="headline-1">
+        <div class="row">
+      <?php
+      break;
+
+    case 4: ?>
+      <li data-orbit-slide="headline-2">
+        <div class="row">
+      <?php
+      break;
+
+    case 7: ?>
+      <li data-orbit-slide="headline-3">
+        <div class="row">
+      <?php
+      break;            
+  }
+?>
+
 <div class="small-4 columns">
   <div class="row">
     <div class="small-4 columns imagen">
@@ -22,3 +45,25 @@
     </div>
   </div>
 </div>
+
+<?php
+  switch ($id) {
+    case 1: ?>
+        </div>
+      </li>
+      <?php
+      break;
+
+    case 4: ?>
+        </div>
+      </li>
+      <?php
+      break;
+
+    case 7: ?>
+        </div>
+      </li>
+      <?php
+      break;            
+  }
+?>
