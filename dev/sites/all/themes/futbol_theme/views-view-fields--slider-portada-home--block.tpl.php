@@ -14,14 +14,14 @@
 
 <?php
   switch ($id) {
-    case 5: 
+    case 9: 
       echo "
       <li data-orbit-slide='headline-1'>
         <div class='row'>
       ";
       break;
 
-    case 8:
+    case 12:
       echo "
       <li data-orbit-slide='headline-1'>
         <div class='row'>
@@ -44,14 +44,14 @@
 
 <?php
   switch ($id) {
-    case 7:
+    case 11:
       echo "
         </div>
       </li>
       ";
       break;
 
-    case 10:
+    case 14:
       echo "
         </div>
       </li>

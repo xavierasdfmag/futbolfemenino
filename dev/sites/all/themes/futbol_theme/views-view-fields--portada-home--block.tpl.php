@@ -14,7 +14,7 @@
 
 <?php 
   switch ($id) {
-    case 1: ?>
+    case 5: ?>
       <img src="<?php print $image; ?>">
       <figcaption>
         <div class="row">
