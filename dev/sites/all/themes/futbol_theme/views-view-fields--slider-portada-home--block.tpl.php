@@ -34,7 +34,7 @@
       <img src="<?php print $image; ?>">
     </div>
     <div class="small-8 columns noticia">
-      <p class="llamada"><?php print $tag; ?></p>
+      <p class="llamada"><?php print $id; ?></p>
       <p class="titulo"><?php print $title; ?></p>
     </div>
   </div>
