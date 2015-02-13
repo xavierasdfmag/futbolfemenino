@@ -11,51 +11,33 @@
 	$tag = $fields['field_tag']->content;
 	$image = $fields['field_imagen']->content;
 ?>
-
 <?php
   switch ($id) {
-    case 5: 
-      echo "
-      <li data-orbit-slide='headline-1'>
-        <div class='row'>
-      ";
+    case 15: ?>
+        <div class="small-12 columns">
+          <p class="title-section"><?php print $tag; ?></p>
+        </div>
+        <div class="small-12 medium-8 columns">
+          <h3 class="title-news"><?php print $id; ?></h3>
+          <p class="bajada"><?php print $texto_corto; ?></p>
+          <img src="<?php print $image; ?>">
+          
+        </div>
+        <div class="small-12 medium-4 columns">
+          <ul>
+      <?php
       break;
 
-    case 8:
-      echo "
-      <li data-orbit-slide='headline-1'>
-        <div class='row'>
-      ";
-      break;        
-  }
-?>
-
-<div class="small-4 columns">
-  <div class="row">
-    <div class="small-4 columns imagen">
-      <img src="<?php print $image; ?>">
-    </div>
-    <div class="small-8 columns noticia">
-      <p class="llamada"><?php print $tag; ?></p>
-      <p class="titulo"><?php print $title; ?></p>
-    </div>
-  </div>
-</div>
-
-<?php
-  switch ($id) {
-    case 7:
-      echo "
-        </div>
-      </li>
-      ";
+    case 18: ?>
+          <li><?php print $id; ?></li>
+        </ul>
+      </div>
+      <?php
+      break;      
+    
+    default: ?>
+        <li><?php print $id; ?></li>
+      <?php
       break;
-
-    case 10:
-      echo "
-        </div>
-      </li>
-      ";
-      break;          
   }
 ?>
