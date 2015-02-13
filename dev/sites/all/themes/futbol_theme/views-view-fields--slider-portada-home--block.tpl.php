@@ -27,7 +27,7 @@
         <div class='row'>
       ";
       break;        
-  }?
+  }
 ?>
 
 <div class="small-4 columns">
