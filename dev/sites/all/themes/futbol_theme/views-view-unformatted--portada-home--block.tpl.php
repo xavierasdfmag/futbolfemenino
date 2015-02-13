@@ -5,3 +5,4 @@
 </figure>   -->
 
 <?php var_dump($rows[0]); ?>
+<?php var_dump($rows); ?>
