@@ -7,9 +7,10 @@
 
 	// kpr($fields);
 	// dpm($fields);
-	$title = $fields['title']->content;
-	$tag = $fields['field_tag']->content;
-	$image = $fields['field_imagen']->content;
+  $title = $fields['title']->content;
+  $tag = $fields['field_tag']->content;
+  $texto_corto = $fields['field_texto_corto']->content;
+  $image = $fields['field_imagen']->content;
 ?>
 <?php
   switch ($id) {
