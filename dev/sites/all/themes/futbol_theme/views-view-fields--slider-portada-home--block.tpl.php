@@ -12,7 +12,7 @@
 	$image = $fields['field_imagen']->content;
 ?>
 
-<?php
+<?php/*
   switch ($id) {
     case 1: 
       echo "
@@ -27,7 +27,7 @@
         <div class='row'>
       ";
       break;        
-  }
+  }?*/
 ?>
 
 <div class="small-4 columns">
@@ -42,7 +42,7 @@
   </div>
 </div>
 
-<?php
+<?php /*
   switch ($id) {
     case 3:
       echo "
@@ -57,5 +57,5 @@
       </li>
       ";
       break;          
-  }
+  }*/
 ?>
