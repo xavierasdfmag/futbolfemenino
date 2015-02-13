@@ -48,19 +48,19 @@
 
 <?php
   switch ($id) {
-    case 1: ?>
+    case 3: ?>
         </div>
       </li>
       <?php
       break;
 
-    case 4: ?>
+    case 6: ?>
         </div>
       </li>
       <?php
       break;
 
-    case 7: ?>
+    case 9: ?>
         </div>
       </li>
       <?php
