@@ -8,15 +8,52 @@
 	// kpr($fields);
 	// dpm($fields);
 	$title = $fields['title']->content;
-	$body = $fields['body']->content;
+	$tag = $fields['field_tag']->content;
 	$image = $fields['field_imagen']->content;
 ?>
-<img src="<?php print $image; ?>">
-<figcaption>
-  <div class="row">
-    <div class="medium-4 columns portada">
-      <p class="tag">BALON DE ORO</p>
-      <p class="title"><?php print $title; ?></p>
-    </div>
-  </div>
-</figcaption>
+
+<?php 
+  switch ($id) {
+    case 5: ?>
+      <img src="<?php print $image; ?>">
+      <figcaption>
+        <div class="row">
+          <div class="medium-4 columns portada">
+            <p class="tag"><?php print $tag; ?></p>
+            <p class="title"><?php print $id; ?></p>
+          </div>
+          <div class="medium-3 columns right tentativas">
+      <?php
+      break;
+
+    case 4: ?>
+            <div class="row">
+              <div class="small-12 columns tentativa">
+                <p class="tag"><?php print $tag; ?></p>
+                <p class="title"><?php print $id; ?></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </figcaption>
+      <?php
+      break;
+    
+    default: ?>
+        <div class="row">
+          <div class="small-12 columns tentativa">
+            <p class="tag"><?php print $tag; ?></p>
+            <p class="title"><?php print $id; ?></p>
+          </div>
+        </div>
+      <?php
+      break;
+  }
+?>
+
+
+
+
+
+
+
