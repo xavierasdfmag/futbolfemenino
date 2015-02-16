@@ -101,7 +101,7 @@
           // print_r ($term);
         ?>
       </p>
-      <p class="single-title"><?php print $node->title; ?></p>
+      <p class="single-title"><?php print $node->title; print $content['title']; print render($content['title']);?></p>
       <p class="single-llamada">
         <?php 
           $field_llamada = $node->field_llamada['und']['0']['value'];
