@@ -117,7 +117,7 @@
     <div class="small-12 large-8 columns sec-left">
       <div class="row">
         <div class="small-12 columns single-img-portada">
-          <img src="<?php file_create_url($node->field_image['und'][0]['uri']); ?>">
+          <img src="<?php print file_create_url($node->field_image['und'][0]['uri']); ?>">
           <?php // print render($content['field_imagen']); ?>
           <!-- <img src="../img/not-type-one.png">  -->
         </div>
