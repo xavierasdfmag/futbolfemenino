@@ -81,7 +81,10 @@
  */
 ?>
 
-  <?php //print_r($node); ?>  
+  <?php //print_r($node); 
+    kpr($fields);
+    dpm($fields);
+  ?>  
   <div class="row">
     <div class="small-12 columns sec-left single-cabecera">
       <p class="single-tag">
