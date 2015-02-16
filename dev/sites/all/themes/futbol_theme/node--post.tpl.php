@@ -83,8 +83,8 @@
 
   <?php 
     // print_r($title); 
-    kpr($content);
-    dpm($content);
+    // kpr($content);
+    dpm($node);
   ?>  
   <div class="row">
     <div class="small-12 columns sec-left single-cabecera">
