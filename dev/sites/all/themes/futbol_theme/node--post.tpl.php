@@ -121,7 +121,7 @@
           <!-- <img src="../img/not-type-one.png">  -->
         </div>
         <div class="small-12 columns single-contenido">
-          <?php print $content['body'][und][0][value]; ?>
+          <?php print $content['body'][0]; ?>
         </div>
 
 
