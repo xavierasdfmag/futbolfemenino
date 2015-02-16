@@ -1,9 +1,9 @@
 <?php
 
 $plugin = array(
-  'title' => t('Futbol femenino site template'),
-  'theme' => 'futboltheme_site_template',
-  'icon' => 'futboltheme-site-template.png',
+  'title' => t('Futbol femenino interna template'),
+  'theme' => 'futboltheme_interna_template',
+  'icon' => 'futboltheme-interna-template.png',
   'category' => 'Futboltheme',
   'regions' => array(
     'publicidad-header' => t('Publicidad Header'),
