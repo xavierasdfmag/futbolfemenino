@@ -82,7 +82,7 @@
 ?>
 
   <?php 
-    print_r($node); 
+    print_r($content); 
     // kpr($fields);
     // dpm($fields);
   ?>  
