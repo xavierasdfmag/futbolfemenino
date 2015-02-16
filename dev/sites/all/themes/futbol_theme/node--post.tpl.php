@@ -82,7 +82,7 @@
 ?>
 
   <?php 
-    print_r($content); 
+    print_r($title); 
     // kpr($fields);
     // dpm($fields);
   ?>  
@@ -121,7 +121,7 @@
           <!-- <img src="../img/not-type-one.png">  -->
         </div>
         <div class="small-12 columns single-contenido">
-          <?php print $content['body']; ?>
+          <?php print $content['body'][und][0][value]; ?>
         </div>
 
 
