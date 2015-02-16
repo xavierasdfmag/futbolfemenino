@@ -82,9 +82,9 @@
 ?>
 
   <?php 
-    print_r($title); 
-    // kpr($fields);
-    // dpm($fields);
+    // print_r($title); 
+    kpr($content);
+    dpm($content);
   ?>  
   <div class="row">
     <div class="small-12 columns sec-left single-cabecera">
