@@ -117,7 +117,7 @@
           <!-- <img src="../img/not-type-one.png">  -->
         </div>
         <div class="small-12 columns single-contenido">
-          <?php print $content; ?>     
+          <?php print $content['body']; ?>
         </div>
 
 
