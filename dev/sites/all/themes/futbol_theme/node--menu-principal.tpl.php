@@ -7,7 +7,7 @@
 
   $titulo = $node->title;
   $cuerpo = $node->body['und']['0']['value'];
-  $fids   = $node->field_items_constitucional['und'];
+  $fids   = $node->field_items_principal['und'];
   // print_r($fids);
   
 ?>
