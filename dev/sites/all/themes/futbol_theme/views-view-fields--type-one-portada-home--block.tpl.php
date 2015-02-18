@@ -20,7 +20,7 @@
           <p class="title-section"><?php print $tag; ?></p>
         </div>
         <div class="small-12 medium-8 columns">
-          <h3 class="title-news"><?php print $id; ?></h3>
+          <h3 class="title-news"><?php print $title; ?></h3>
           <p class="bajada"><?php print $texto_corto; ?></p>
           <img src="<?php print $image; ?>">
           
@@ -31,14 +31,14 @@
       break;
 
     case 4: ?>
-          <li><?php print $id; ?></li>
+          <li><?php print $title; ?></li>
         </ul>
       </div>
       <?php
       break;      
     
     default: ?>
-        <li><?php print $id; ?></li>
+        <li><?php print $title; ?></li>
       <?php
       break;
   }

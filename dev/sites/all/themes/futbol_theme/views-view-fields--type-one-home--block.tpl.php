@@ -12,4 +12,4 @@
   $texto_corto = $fields['field_texto_corto']->content;
   $image = $fields['field_imagen']->content;
 ?>
-<?php print $id; ?>
+<?php print $title; ?>

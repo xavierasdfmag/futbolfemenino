@@ -91,17 +91,17 @@
       <p class="single-tag">
         <?php print $terms; ?>
         <?php 
-          // foreach ($node->field_tag['und'] as $value) {
-          //   $term = taxonomy_term_load($value['tid']);
-          //   print $term->name.' ';
-          // }
+          foreach ($node->field_tag['und'] as $value) {
+            $term = taxonomy_term_load($value['tid']);
+            print $term->name.' ';
+          }
 
           // $term=taxonomy_term_load($node->field_tag['und'][0]['tid']);
           // $result=field_view_field('taxonomy_term',$term,'field_tx_headline','text');
           // print_r ($term);
         ?>
       </p>
-      <p class="single-title"><?php print $node->title; print $content['title']; print render($content['title']);?></p>
+      <p class="single-title"><?php print $node->title; ?></p>
       <p class="single-llamada">
         <?php 
           $field_llamada = $node->field_llamada['und']['0']['value'];
@@ -117,7 +117,8 @@
     <div class="small-12 large-8 columns sec-left">
       <div class="row">
         <div class="small-12 columns single-img-portada">
-          <?php print render($content['field_imagen']); ?>
+          <img src="<?php print file_create_url($node->field_imagen['und']['0']['uri']); ?>">
+          <?php // print render($content['field_imagen']); ?>
           <!-- <img src="../img/not-type-one.png">  -->
         </div>
         <div class="small-12 columns single-contenido">
