@@ -7,40 +7,26 @@
 
   $titulo = $node->title;
   $cuerpo = $node->body['und']['0']['value'];
-  $fids   = $node->field_menu_top_campos['und'];
-  // print_r($fids);
+  $fids   = $node->field_items_constitucional['und'];
+  print_r($fids);
   
 ?>
 
-<div class="container-sm mb-70 pb-70">
-  <h1 class="light"><?php print $titulo ?></h1>
-  <div class="separator-gray separator-sm"></div>
-  
-  <div class="col-sm-6 list-custom mb-ch-42">
-    <div>
       <ul>
         <?php foreach ($fids as $fid) : ?>
           <?php 
             // print_r($fid['value']);
             $num = $fid['value'];
             $field = entity_load('field_collection_item', array($fid['value']));
-            $nombre = $field[$num]->field_nombre['und'][0]['value'];
-            $nombre_ingles = $field[$num]->field_nombre_ingles['und'][0]['value'];
-            $link = $field[$num]->field_link_atajo['und'][0]['value'];
-            $link_ingles = $field[$num]->field_link_atajo_ingles['und'][0]['value'];
+            $nombre = $field[$num]->field_titulo_institucional['und'][0]['value'];
+            // $nombre_ingles = $field[$num]->field_nombre_ingles['und'][0]['value'];
+            $link = $field[$num]->field_link_institucional['und'][0]['value'];
+            // $link_ingles = $field[$num]->field_link_atajo_ingles['und'][0]['value'];
           ?>
           <li>
-            <?php if ($language->language == 'en') : ?>
-              <a href="<?php print $link_ingles ?>"><?php print $nombre_ingles ?></a>
-            <?php elseif ($language->language != 'en') : ?>
-              <a href='<?php print $link ?>'><?php print $nombre ?></a>
-            <?php endif; ?>
+            <a href='<?php print $link ?>'><?php print $nombre ?></a>
           </li>
         <?php endforeach; ?>  
       </ul>
-    </div>
-  </div>
 
   <?php print $cuerpo ?>
-
-</div>
