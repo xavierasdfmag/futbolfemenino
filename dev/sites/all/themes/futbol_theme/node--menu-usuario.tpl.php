@@ -18,8 +18,8 @@
             // print_r($fid['value']);
             $num = $fid['value'];
             $field = entity_load('field_collection_item', array($fid['value']));
-            $nombre = $field[$num]->field_titulo_institucional['und'][0]['value'];
-            $link = $field[$num]->field_link_institucional['und'][0]['value'];
+            $nombre = $field[$num]->field_titulo_usuario['und'][0]['value'];
+            $link = $field[$num]->field_link_usuario['und'][0]['value'];
           ?>
           <li>
             <a href='<?php print $link ?>'><?php print $nombre ?></a>
