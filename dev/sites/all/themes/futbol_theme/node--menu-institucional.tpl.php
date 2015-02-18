@@ -11,8 +11,8 @@
   // print_r($fids);
   
 ?>
-
-      <ul>
+    <div class="small-12 columns menu-institucional">
+      <ul class="inline-list left">
         <?php foreach ($fids as $fid) : ?>
           <?php 
             // print_r($fid['value']);
@@ -26,5 +26,3 @@
           </li>
         <?php endforeach; ?>  
       </ul>
-
-  <?php print $cuerpo ?>

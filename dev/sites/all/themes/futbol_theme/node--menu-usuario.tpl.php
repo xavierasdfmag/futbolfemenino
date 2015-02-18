@@ -12,7 +12,7 @@
   
 ?>
 
-      <ul>
+      <ul class="inline-list right">
         <?php foreach ($fids as $fid) : ?>
           <?php 
             // print_r($fid['value']);
@@ -26,5 +26,9 @@
           </li>
         <?php endforeach; ?>  
       </ul>
+      </div>
+    <div class="small-12 columns logo">
+      <img src="../img/logo.png">
+    </div>      
 
   <?php print $cuerpo ?>
