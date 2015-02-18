@@ -20,23 +20,9 @@
             $field = entity_load('field_collection_item', array($fid['value']));
             $nombre = $field[$num]->field_titulo_institucional['und'][0]['value'];
             $link = $field[$num]->field_link_institucional['und'][0]['value'];
-            switch ($nombre) {
-              case 'Ingresa':
-                $icon = '<span class="icon-user"></span>';
-                break;
-              case 'Suscribete':
-                $icon = '<span class="icon-user-plus"></span>';
-                break;
-              case 'Busca':
-                $icon = '<span class="icon-search"></span>';
-                break;                                
-              default:
-                $icon = '<span class=""></span>';
-                break;
-            }
           ?>
           <li>
-            <a href='<?php print $link; ?>'><?php print $icon; ?><?php print $nombre; ?></a>
+            <a href='<?php print $link; ?>'><?php print $nombre; ?></a>
           </li>
         <?php endforeach; ?>  
       </ul>
