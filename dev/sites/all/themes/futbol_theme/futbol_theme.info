@@ -4,6 +4,7 @@ core = 7.x
 engine = phptemplate
 
 stylesheets[all][] = css/app.css
+stylesheets[all][] = css/icons.css
 
 plugins[panels][layouts] = plugins/layouts
 plugins[panels][styles] = plugins/styles

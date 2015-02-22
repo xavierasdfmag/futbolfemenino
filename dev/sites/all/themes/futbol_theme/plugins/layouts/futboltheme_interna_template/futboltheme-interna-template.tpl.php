@@ -17,7 +17,7 @@
 <div class="row main-menu">
   <?php print render($content['main-menu']); ?>
 </div>
-<div class="row contenedor">
+<div class="">
 
       <?php print render($content['left-side']); ?>
 
