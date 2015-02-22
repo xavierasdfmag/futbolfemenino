@@ -2,12 +2,12 @@
   <ul class="example-orbit-content" data-orbit>
     <?php $count = 0; ?>
     <?php foreach ($rows as $id => $row): ?>
-			<?php if ($count%3 == 0) : ?>
+			<?php if (fmod($count, 3) == 0) : ?>
 			<li data-orbit-slide='headline-1'>
 			  <div class='row'>
 			<?php endif; ?>  
-	      <?php print $row;?>
-	    <?php if ($count%3 == 0) : ?>  
+		      <?php print $row;?>
+	    <?php if (fmod($count, 3) == 0) : ?>  
 		    </div>
 			</li>
 			<?php endif; ?> 
