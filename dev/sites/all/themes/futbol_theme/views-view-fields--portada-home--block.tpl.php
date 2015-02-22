@@ -24,17 +24,20 @@
           <p class="title"><?php print $title; ?></p>
         </div>
         <div class="medium-3 columns right tentativas"> 
+    <?php continue; ?>        
   <?php elseif($key > 0 && $key < $total-1) : ?>
           <div class="row">
             <div class="small-12 columns tentativa">
               <p class="tag"><?php print $tag; ?></p>
               <p class="title"><?php print $title; ?></p>
             </div>
-          </div>    
+          </div>  
+          <?php continue; ?>   
   <?php elseif($key == $total-1) : ?>
         </div>
       </div>
     </figcaption>
+    <?php continue; ?> 
   <?php endif ?>
 <?php endforeach ?>  
 
