@@ -7,7 +7,7 @@
 			  <div class='row'>
 			<?php endif; ?>  
 		      <?php print $row;?>
-	    <?php if (fmod($count, 3) == 0) AND ($count > 0) : ?>  
+	    <?php if (fmod($count, 3) == 0 AND $count > 0) : ?>  
 		    </div>
 			</li>
 			<?php endif; ?> 
