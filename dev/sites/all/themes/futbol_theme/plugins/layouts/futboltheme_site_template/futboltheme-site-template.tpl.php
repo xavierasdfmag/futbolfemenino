@@ -18,7 +18,7 @@
   <?php print render($content['main-menu']); ?>
 </div>
 
-<div id="modalMenu" class="reveal-modal" data-reveal>
+<!-- <div id="modalMenu" class="reveal-modal" data-reveal>
   <div class="contenido-modal">
     <div class="row">
       <div class="small-12 columns"><img src="../img/logo.png"></div>
@@ -75,12 +75,13 @@
             <p class="llamada">Entrenantanto que sus papas piensan que están de compras, inefables.</p>
           </div>
         </div>
-      </div>
+      </div> 
     
     </div>
     <a class="close-reveal-modal">&#215;</a>
   </div>
-</div>
+</div> -->
+
 
 <div class="row show-for-large-up">
   <?php print render($content['post-portada']); ?>        
