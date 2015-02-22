@@ -75,12 +75,13 @@
             <p class="llamada">Entrenantanto que sus papas piensan que están de compras, inefables.</p>
           </div>
         </div>
-      </div>
+      </div> 
     
     </div>
     <a class="close-reveal-modal">&#215;</a>
   </div>
 </div>
+
 
 <div class="row show-for-large-up">
   <?php print render($content['post-portada']); ?>        
