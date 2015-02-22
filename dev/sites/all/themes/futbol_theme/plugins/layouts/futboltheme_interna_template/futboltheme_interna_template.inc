@@ -9,6 +9,7 @@ $plugin = array(
     'publicidad-header' => t('Publicidad Header'),
     'encabezado-header' => t('Encabezado Header'),
     'main-menu' => t('Main Menu'),
+    'mega-menu' => t('Mega Menu'),    
     'left-side' => t('Left Side'),
     'right-side' => t('Right Side'),
     'banner-sponsor' => t('Banner Sponsor'),
