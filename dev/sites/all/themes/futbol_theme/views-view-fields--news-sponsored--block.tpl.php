@@ -7,7 +7,7 @@
 
 	// kpr($fields);
 	// dpm($fields);
-  print_r($fields);
+  die(print_r($fields));
 	$title = $fields['title']->content;
 	$tag = $fields['field_tag']->content;
 	$image = $fields['field_imagen']->content;
