@@ -64,7 +64,7 @@
             $link = $field[$num]->field_link_principal['und'][0]['value'];
           ?>
           <li>
-            <a href='<?php print $link ?>'><?php print $nombre ?></a>
+            <a href='/dev/<?php print $link ?>'><?php print $nombre ?></a>
           </li>
         <?php endforeach; ?>  
       </ul>
