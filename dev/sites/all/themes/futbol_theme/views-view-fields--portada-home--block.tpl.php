@@ -5,51 +5,43 @@
   $path = $base_url.'/'.$theme_path;
   $pathfile = variable_get('file_public_path', conf_path() . '/files/'); 
 
-	// kpr($fields);
-	// dpm($fields);
+	// kpr($view);
+	// die(print_r($view));
 	$title = $fields['title']->content;
 	$tag = $fields['field_tag']->content;
 	$image = $fields['field_imagen']->content;
 ?>
 
-<?php 
-  switch ($id) {
-    case 5: ?>
-      <img src="<?php print $image; ?>">
-      <figcaption>
-        <div class="row">
-          <div class="medium-4 columns portada">
-            <p class="tag"><?php print $tag; ?></p>
-            <p class="title"><?php print $title; ?></p>
-          </div>
-          <div class="medium-3 columns right tentativas">
-      <?php
-      break;
-
-    case 4: ?>
-            <div class="row">
-              <div class="small-12 columns tentativa">
-                <p class="tag"><?php print $tag; ?></p>
-                <p class="title"><?php print $title; ?></p>
-              </div>
+<?php  $total = count($view->result); ?>
+<?php print $total; ?>
+<?php foreach ($view->result as $key => $value) : ?>
+  <?php if ($key == 0) : ?>
+    <img src="<?php print $image; ?>">
+    <figcaption>
+      <div class="row">
+        <div class="medium-4 columns portada">
+          <p class="tag"><?php print $tag; ?></p>
+          <p class="title"><?php print $title; ?></p>
+        </div>
+        <div class="medium-3 columns right tentativas"> 
+    <?php continue; ?>        
+  <?php elseif($key > 0 && $key < $total-1) : ?>
+          <div class="row">
+            <div class="small-12 columns tentativa">
+              <p class="tag"><?php print $tag; ?></p>
+              <p class="title"><?php print $title; ?></p>
             </div>
-          </div>
+          </div>  
+          <?php continue; ?>   
+  <?php elseif($key == $total-1) : ?>
         </div>
-      </figcaption>
-      <?php
-      break;
-    
-    default: ?>
-        <div class="row">
-          <div class="small-12 columns tentativa">
-            <p class="tag"><?php print $tag; ?></p>
-            <p class="title"><?php print $title; ?></p>
-          </div>
-        </div>
-      <?php
-      break;
-  }
-?>
+      </div>
+    </figcaption>
+    <?php continue; ?> 
+  <?php endif ?>
+<?php endforeach ?>  
+
+
 
 
 
