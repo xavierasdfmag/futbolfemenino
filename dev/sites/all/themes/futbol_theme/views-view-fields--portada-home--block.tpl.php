@@ -13,9 +13,11 @@
 ?>
 
 <?php  $total = count($view->result); ?>
+<?php  $first = reset($view->result); ?>
 <?php print $total; ?>
-<?php foreach ($view->result as $key => $value) : ?>
-  <?php if ($key == 0) : ?>
+<?php $count = 0; ?>
+
+  <?php if ($count == 0) : ?>
     <img src="<?php print $image; ?>">
     <figcaption>
       <div class="row">
@@ -24,23 +26,23 @@
           <p class="title"><?php print $title; ?></p>
         </div>
         <div class="medium-3 columns right tentativas"> 
-    <?php continue; ?>        
-  <?php elseif($key > 0 && $key < $total-1) : ?>
+       
+  <?php elseif($count > 0 && $count < $total-1) : ?>
           <div class="row">
             <div class="small-12 columns tentativa">
               <p class="tag"><?php print $tag; ?></p>
               <p class="title"><?php print $title; ?></p>
             </div>
           </div>  
-          <?php continue; ?>   
-  <?php elseif($key == $total-1) : ?>
+
+  <?php elseif($count == $total-1) : ?>
         </div>
       </div>
     </figcaption>
-    <?php continue; ?> 
-  <?php endif ?>
-<?php endforeach ?>  
 
+  <?php endif ?>
+  <?php $count++; ?>
+  
 
 
 
