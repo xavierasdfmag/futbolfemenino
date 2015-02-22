@@ -17,6 +17,9 @@
 <div class="row main-menu">
   <?php print render($content['main-menu']); ?>
 </div>
+<div id="modalMenu" class="reveal-modal" data-reveal>
+  <?php print render($content['mega-menu']); ?>
+</div>
 <div class="">
 
       <?php print render($content['left-side']); ?>
