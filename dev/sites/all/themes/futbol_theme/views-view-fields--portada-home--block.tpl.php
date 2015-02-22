@@ -24,14 +24,14 @@
           <p class="title"><?php print $title; ?></p>
         </div>
         <div class="medium-3 columns right tentativas"> 
-  <?php elseif($key > 0 && $key < $total) : ?>
+  <?php elseif($key > 0 && $key < $total-1) : ?>
           <div class="row">
             <div class="small-12 columns tentativa">
               <p class="tag"><?php print $tag; ?></p>
               <p class="title"><?php print $title; ?></p>
             </div>
           </div>    
-  <?php elseif($key == $total) : ?>
+  <?php elseif($key == $total-1) : ?>
         </div>
       </div>
     </figcaption>
