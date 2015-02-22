@@ -15,10 +15,22 @@
       <div class="top-bar-container contain-to-grid sticky" role="navigation">
         <nav class="top-bar" data-topbar role="navigation">
           <ul class="title-area">
-            <li class="name">
-              <span class="icon-home"></span>
-              <!-- <h1><a href="#">My Site</a></h1> -->
-            </li>
+          <?php foreach ($fids as $fid) : ?>
+          <?php 
+            // print_r($fid['value']);
+            $num = $fid['value'];
+            $field = entity_load('field_collection_item', array($fid['value']));
+            $nombre = $field[$num]->field_titulo_principal['und'][0]['value'];
+            $link = $field[$num]->field_link_principal['und'][0]['value'];
+            if ( $nombre == 'Home') {
+              ?>
+              <li class="name">
+                <a href="/dev/<?php print $link ?>"><span class="icon-home"></span></a>
+              </li>
+              <?php
+            }
+          ?>
+          <?php endforeach; ?>  
              <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
             <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
           </ul>
