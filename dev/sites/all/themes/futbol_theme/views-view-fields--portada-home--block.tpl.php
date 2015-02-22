@@ -12,34 +12,32 @@
 	$image = $fields['field_imagen']->content;
 ?>
 
-<?php $count = 0; ?>
-<?php $first = $view->result[0]; ?>
+<?php  $total = count($view->result); ?>
+<?php print $total; ?>
 <?php foreach ($view->result as $key => $value) : ?>
-  <?php print $key; ?>
-  <?php if ($key == 1) : ?>
-
-  <?php endif ?>
-<?php endforeach ?>  
-<?php if ($count == 0) : ?>
-<img src="<?php print $image; ?>">
-<figcaption>
-  <div class="row">
-    <div class="medium-4 columns portada">
-      <p class="tag"><?php print $tag; ?></p>
-      <p class="title"><?php print $title; ?></p>
-    </div>
-    <div class="medium-3 columns right tentativas">      
-<?php else : ?>
+  <?php if ($key == 0) : ?>
+    <img src="<?php print $image; ?>">
+    <figcaption>
       <div class="row">
-        <div class="small-12 columns tentativa">
+        <div class="medium-4 columns portada">
           <p class="tag"><?php print $tag; ?></p>
           <p class="title"><?php print $title; ?></p>
         </div>
+        <div class="medium-3 columns right tentativas"> 
+  <?php elseif($key > 0 && $key < $total) : ?>
+          <div class="row">
+            <div class="small-12 columns tentativa">
+              <p class="tag"><?php print $tag; ?></p>
+              <p class="title"><?php print $title; ?></p>
+            </div>
+          </div>    
+  <?php elseif($key == $total) : ?>
+        </div>
       </div>
-    </div>
-  </div>
-</figcaption>
-<?php endif ?>
+    </figcaption>
+  <?php endif ?>
+<?php endforeach ?>  
+
 
 
 
