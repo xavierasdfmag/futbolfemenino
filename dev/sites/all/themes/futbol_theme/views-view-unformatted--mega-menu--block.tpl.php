@@ -1,7 +1,6 @@
   <?php //foreach ($rows as $id => $row): ?>
   <?php //print $row;?>
 
-<div id="modalMenu" class="reveal-modal" data-reveal>
   <div class="contenido-modal">
     <div class="row">
       <div class="small-12 columns"><img src="../img/logo.png"></div>
@@ -63,4 +62,3 @@
     </div>
     <a class="close-reveal-modal">&#215;</a>
   </div>
-</div>
