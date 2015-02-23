@@ -5,17 +5,16 @@
   $path = $base_url.'/'.$theme_path;
   $pathfile = variable_get('file_public_path', conf_path() . '/files/'); 
 
-	kpr($fields);
+	// kpr($fields);
 	// die(print_r($view));
 	$title = $fields['title']->content;
 	$tag = $fields['field_tag']->content;
-	$image = $fields['field_imagen']->content;
+  $image = $fields['field_imagen']->content;
+	$count = $fields['counter']->content;
 ?>
 
 <?php  $total = count($view->result); ?>
-<?php  $first = reset($view->result); ?>
 <?php print $total; ?>
-<?php $count = 1; ?>
 
   <?php if ($count == 1) : ?>
     <img src="<?php print $image; ?>">
