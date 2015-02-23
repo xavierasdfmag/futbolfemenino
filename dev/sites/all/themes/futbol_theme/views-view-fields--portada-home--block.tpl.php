@@ -14,7 +14,6 @@
 ?>
 
 <?php  $total = count($view->result); ?>
-<?php print $total; ?>
 
   <?php if ($count == 1) : ?>
     <img src="<?php print $image; ?>">
@@ -26,7 +25,7 @@
         </div>
         <div class="medium-3 columns right tentativas"> 
        
-  <?php elseif($count > 1 && $count < $total) : ?>
+  <?php elseif($count > 1 && $count <= $total) : ?>
           <div class="row">
             <div class="small-12 columns tentativa">
               <p class="tag"><?php print $tag; ?></p>
