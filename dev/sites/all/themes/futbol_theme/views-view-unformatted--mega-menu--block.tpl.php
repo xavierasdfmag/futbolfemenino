@@ -1,3 +1,6 @@
+  <?php //foreach ($rows as $id => $row): ?>
+  <?php //print $row;?>
+
   <div class="contenido-modal">
     <div class="row">
       <div class="small-12 columns"><img src="../img/logo.png"></div>
@@ -24,9 +27,38 @@
       </div>
       <div class="small-12 medium-9 columns">
         <h3>Features</h3>
-          <?php foreach ($rows as $id => $row): ?>
-          <?php print $row;?>
+        <div class="row">
+          <div class="small-12 medium-5 columns">
+            <img src="../img/not-type-one.png">
+          </div>
+          <div class="small-12 medium-7 columns">
+            <p class="tag">SUB 20</p>
+            <p class="title">La señorita de la sub 20 entrenan sin descanso en la videna</p>
+            <p class="llamada">Entrenantanto que sus papas piensan que están de compras, inefables.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-12 medium-5 columns">
+            <img src="../img/not-type-one.png">
+          </div>
+          <div class="small-12 medium-7 columns">
+            <p class="tag">SUB 20</p>
+            <p class="title">La señorita de la sub 20 entrenan sin descanso en la videna</p>
+            <p class="llamada">Entrenantanto que sus papas piensan que están de compras, inefables.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-12 medium-5 columns">
+            <img src="../img/not-type-one.png">
+          </div>
+          <div class="small-12 medium-7 columns">
+            <p class="tag">SUB 20</p>
+            <p class="title">La señorita de la sub 20 entrenan sin descanso en la videna</p>
+            <p class="llamada">Entrenantanto que sus papas piensan que están de compras, inefables.</p>
+          </div>
+        </div>
       </div> 
+    
     </div>
     <a class="close-reveal-modal">&#215;</a>
   </div>
