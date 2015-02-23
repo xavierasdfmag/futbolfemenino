@@ -5,8 +5,8 @@
   $path = $base_url.'/'.$theme_path;
   $pathfile = variable_get('file_public_path', conf_path() . '/files/'); 
 
-	// kpr($view);
-	die(print_r($view));
+	kpr($fields);
+	// die(print_r($view));
 	$title = $fields['title']->content;
 	$tag = $fields['field_tag']->content;
 	$image = $fields['field_imagen']->content;
