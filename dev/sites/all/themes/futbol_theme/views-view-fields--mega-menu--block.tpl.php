@@ -15,7 +15,7 @@
 
   <div class="row">
     <div class="small-12 medium-5 columns">
-      <img src="../img/not-type-one.png">
+      <img src="<?php print $image; ?>">
     </div>
     <div class="small-12 medium-7 columns">
       <p class="tag"><?php print $tag; ?></p>
