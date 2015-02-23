@@ -5,22 +5,10 @@
   $path = $base_url.'/'.$theme_path;
   $pathfile = variable_get('file_public_path', conf_path() . '/files/'); 
 
-	kpr($fields);
-	dpm($fields);
+	// kpr($fields);
+	// dpm($fields);
   //die(print_r($fields));
-	// $title = $fields['title']->content;
-	// $tag = $fields['field_tag']->content;
- //  $image = $fields['field_imagen']->content;
-	// $share = $fields['sharethis']->content;
+	$name = $fields['field_titulo_principal']->content;
+	$link = $fields['field_link_principal']->content;
 ?>
-
-<!-- <div class="small-6 medium-4 columns">
-  <figure>
-      <img src="<?php print $image; ?>">
-    <figcaption>
-    </figcaption>
-  </figure>
-  <p class="llamada"><?php print $tag; ?></p>
-  <p class="titulo"><?php print $title; ?></p>
-  <p><?php print $share; ?></p>
-</div> -->
+<li><a href="<?php print $link; ?>">><?php print $name; ?></a></li>
