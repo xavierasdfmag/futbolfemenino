@@ -11,4 +11,4 @@
 	$name = $fields['field_titulo_principal']->content;
 	$link = $fields['field_link_principal']->content;
 ?>
-<li><a href="<?php print $link; ?>">><?php print $name; ?></a></li>
+<li><a href="<?php print $link; ?>"><?php print $name; ?></a></li>
