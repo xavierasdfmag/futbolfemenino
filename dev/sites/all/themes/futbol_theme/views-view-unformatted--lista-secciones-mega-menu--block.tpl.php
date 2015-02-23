@@ -8,15 +8,7 @@
 					<?php foreach ($rows as $id => $row): ?>
 					  <?php print $row;?>
 					<?php endforeach; ?>
-<!--         <ul class="menu">
-          <li><a href="#">TENDENCIA</a></li>
-          <li><a href="#">LOCALES</a></li>
-          <li><a href="#">MUNDO</a></li>
-          <li><a href="#">FUNDAMENTOS</a></li>
-          <li><a href="#">LA AGENDA</a></li>
-          <li><a href="#">LOS TOPS</a></li>
-          <li><a href="#">REVISTA</a></li>
-        </ul> -->
+
         <ul class="menu-institucional">
           <li><a href="#">CORRESPONSAL</a></li>
           <li><a href="#">CONTACTO</a></li>
