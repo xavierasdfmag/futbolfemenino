@@ -11,6 +11,7 @@
   $tag = $fields['field_tag']->content;
   $llamada = $fields['field_llamada']->content;
   $image = $fields['field_imagen']->content;
+  $count = $fields['counter']->content;
 ?>
 <?php  $total = count($view->result); ?>
 
