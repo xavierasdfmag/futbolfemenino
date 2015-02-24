@@ -42,7 +42,10 @@
       </ul>
       </div>
     <div class="small-12 columns logo">
-      <img src="../img/logo.png">
+      <?php
+        print theme_get_setting('logo', 'Futbol Femenino Theme'); 
+      ?>
+      <!-- <img src="../img/logo.png"> -->
     </div>      
 
   <?php print $cuerpo ?>
