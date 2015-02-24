@@ -43,7 +43,7 @@
       </div>
     <div class="small-12 columns logo">
       <?php
-        print theme_get_setting('logo', 'Futbol Femenino Theme'); 
+        print $path.theme_get_setting('logo', 'Futbol Femenino Theme'); 
       ?>
       <!-- <img src="../img/logo.png"> -->
     </div>      
