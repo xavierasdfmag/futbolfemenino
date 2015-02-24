@@ -3,3 +3,4 @@
     <?php print $row;?>
   <?php endforeach; ?>
 </div>
+</div>
