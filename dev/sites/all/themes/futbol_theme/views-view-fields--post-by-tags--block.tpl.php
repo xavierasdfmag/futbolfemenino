@@ -13,7 +13,7 @@
 	$image = $fields['field_imagen']->content;
 ?>
 
-<div class="row">
+<div class="row post-by-tag">
   <div class="small-4 columns">
     <img src="<?php print $image; ?>">
   </div>
