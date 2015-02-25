@@ -42,7 +42,10 @@
       </ul>
       </div>
     <div class="small-12 columns logo">
-      <?php $ruta_logo = $base_url.'/'.drupal_get_path('theme',$GLOBALS['theme']).theme_get_setting('logo', $GLOBALS['theme']); ?>
+      <?php 
+      // $ruta_logo = $base_url.'/'.drupal_get_path('theme',$GLOBALS['theme']).theme_get_setting('logo', $GLOBALS['theme']); 
+      print theme_get_setting('logo', $GLOBALS['theme']);
+      ?>
       <img src="<?php print $ruta_logo; ?>" >
     </div>      
 
