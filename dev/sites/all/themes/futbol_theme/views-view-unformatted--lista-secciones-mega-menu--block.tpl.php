@@ -1,6 +1,9 @@
   <div class="contenido-modal">
     <div class="row">
-      <div class="small-12 columns"><img src="../img/logo.png"></div>
+      <div class="small-12 columns">
+        <?php $ruta_logo = $base_url.'/'.drupal_get_path('theme',$GLOBALS['theme']).theme_get_setting('logo', $GLOBALS['theme']); ?>
+        <img src="<?php print $ruta_logo; ?>" >
+      </div>
     </div>
     <div class="row">
       <div class="small-12 medium-3 columns">
