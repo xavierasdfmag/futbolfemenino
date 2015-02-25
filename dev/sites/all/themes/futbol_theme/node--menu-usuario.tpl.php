@@ -43,7 +43,9 @@
       </div>
     <div class="small-12 columns logo">
       <?php
-        print $path.theme_get_setting('logo', 'Futbol Femenino Theme'); 
+        print drupal_get_path('theme',$GLOBALS['theme']);
+        print drupal_get_path('theme','Futbol Femenino Theme');
+        print theme_get_setting('logo', 'Futbol Femenino Theme'); 
       ?>
       <!-- <img src="../img/logo.png"> -->
     </div>      
