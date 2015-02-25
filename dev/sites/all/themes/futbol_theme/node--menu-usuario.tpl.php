@@ -42,11 +42,9 @@
       </ul>
       </div>
     <div class="small-12 columns logo">
-        <img src="<?php print $base_url.'/'.drupal_get_path('theme',$GLOBALS['theme']).theme_get_setting('logo', 'Futbol Femenino Theme'); ?>" >
       <?php
-        print $base_url.'/'.drupal_get_path('theme',$GLOBALS['theme']).theme_get_setting('logo', 'Futbol Femenino Theme');
-        echo "<br>";
-        print $base_url;
+        $ruta_logo = $base_url.'/'.drupal_get_path('theme',$GLOBALS['theme']).theme_get_setting('logo', 'Futbol Femenino Theme');
+        print $ruta_logo;
         // echo "<br>";
         // print base_root();
         // echo "<br>";
@@ -54,6 +52,7 @@
         // echo "<br>";
         // print theme_get_setting('logo', 'Futbol Femenino Theme'); 
       ?>
+        <img src="<?php print $ruta_logo; ?>" >
       <!-- <img src="../img/logo.png"> -->
     </div>      
 
