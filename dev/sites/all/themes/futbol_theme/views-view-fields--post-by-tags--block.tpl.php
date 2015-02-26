@@ -14,7 +14,7 @@
 ?>
 
 <div class="row post-by-tag">
-  <div class="small-4 columns">
+  <div class="small-4 columns image">
     <img src="<?php print $image; ?>">
   </div>
   <div class="small-8 columns">
