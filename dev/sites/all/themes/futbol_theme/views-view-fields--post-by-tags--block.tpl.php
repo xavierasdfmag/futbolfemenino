@@ -19,7 +19,7 @@
   </div>
   <div class="small-8 columns">
       <p class="tag"><?php print $tag; ?></p>
-      <p class="titulo"><?php print $title; ?></p>
+      <p class="title"><?php print $title; ?></p>
       <p class="llamada"><?php print $llamada; ?></p>
     
   </div>  
