@@ -8,6 +8,6 @@
 	// kpr($fields);
 	// dpm($fields);
 	$title = $fields['title']->content;
-	$image = $fields['field_imagen']->content;
+	$image = $fields['field_banner']->content;
 ?>
 <img src="<?php print $image; ?>">
