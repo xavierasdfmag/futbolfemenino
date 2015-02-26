@@ -38,7 +38,7 @@
     </div>
   <!-- </div> -->
 </div>
-<div class="row banner-sponsor">
+<div class="row sponsor-banner">
   <?php print render($content['banner-sponsor']); ?>
 </div>
 <div class="row sponsor-news">
