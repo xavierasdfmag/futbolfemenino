@@ -83,7 +83,7 @@
 
   <?php 
     // print_r($title); 
-    // kpr($node);
+    kpr($node);
     // dpm($node);
   ?>  
   <div class="row">
