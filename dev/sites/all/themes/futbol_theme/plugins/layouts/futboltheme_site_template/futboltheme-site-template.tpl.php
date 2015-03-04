@@ -23,20 +23,22 @@
 <div class="show-for-large-up">
   <?php print render($content['post-portada']); ?>        
 </div>
-<div class="row slider-portada show-for-large-up">
-  <?php print render($content['slider-portada']); ?>
-</div>
-<div class="row contenedor">
-  <!-- <div class="left-side"> -->
-    <div class="small-12 medium-12 large-8 columns sec-left">
-      <?php print render($content['left-side']); ?>
-    </div>
-  <!-- </div> -->
-  <!-- <div class="right-side"> -->
-    <div class="small-12 medium-12 large-4 columns">
-      <?php print render($content['right-side']); ?>
-    </div>
-  <!-- </div> -->
+<div class="bg-white">
+  <div class="row slider-portada show-for-large-up">
+    <?php print render($content['slider-portada']); ?>
+  </div>
+  <div class="row contenedor">
+    <!-- <div class="left-side"> -->
+      <div class="small-12 medium-12 large-8 columns sec-left">
+        <?php print render($content['left-side']); ?>
+      </div>
+    <!-- </div> -->
+    <!-- <div class="right-side"> -->
+      <div class="small-12 medium-12 large-4 columns">
+        <?php print render($content['right-side']); ?>
+      </div>
+    <!-- </div> -->
+  </div>
 </div>
 <div class="row sponsor-banner">
   <?php print render($content['banner-sponsor']); ?>
