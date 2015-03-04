@@ -12,6 +12,7 @@
   $llamada = $fields['field_llamada']->content;
   $image = $fields['field_imagen']->content;
   $count = $fields['counter']->content;
+  $share = $fields['sharethis']->content;
 ?>
 <?php  $total = count($view->result); ?>
 
@@ -26,6 +27,11 @@
       <h3 class="title-news"><?php print $title; ?></h3>
       <p class="bajada"><?php print $llamada; ?></p>
 
+    </div>
+    <div class="small-12 columns">
+      <div class="sociales-type-three text-right">
+        <?php print $share; ?>
+      </div>      
     </div>
 
     <div class="small-8 left columns">
