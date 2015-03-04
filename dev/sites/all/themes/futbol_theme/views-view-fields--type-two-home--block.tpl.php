@@ -11,6 +11,7 @@
   $tag = $fields['field_tag']->content;
   $llamada = $fields['field_llamada']->content;
   $image = $fields['field_imagen']->content;
+  $share = $fields['sharethis']->content;
 ?>
 
 
@@ -26,4 +27,9 @@
   <div class="small-12 medium-5 columns">
     <p class="bajada"><?php print $llamada; ?></p>
   </div>
+  <div class="small-12 columns">
+    <div class="sociales-type-three text-right">
+      <?php print $share; ?>
+    </div>      
+  </div>  
 
