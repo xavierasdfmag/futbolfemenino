@@ -3,4 +3,10 @@
     <?php print $row;?>
   <?php endforeach; ?>
 </div>
+	<div class="row">
+		<div class="small-12 columns">
+			<?php print $rows[0]; ?>
+		</div>
+		
+	</div>
 </div>
