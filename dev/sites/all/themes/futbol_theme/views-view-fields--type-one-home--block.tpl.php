@@ -24,9 +24,9 @@
       <h3 class="title-news"><?php print $title; ?></h3>
       <p class="bajada"><?php print $llamada; ?></p>
       <img src="<?php print $image; ?>">
-    </div>
-    <div class="small-12 columns">
-      <?php print $share; ?>
+      <div class="">
+        <?php print $share; ?>
+      </div>
     </div>
     <div class="small-12 medium-4 columns">
       <ul>
