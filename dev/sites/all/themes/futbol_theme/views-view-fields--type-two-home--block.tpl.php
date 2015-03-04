@@ -28,7 +28,7 @@
     <p class="bajada"><?php print $llamada; ?></p>
   </div>
   <div class="small-12 columns">
-    <div class="sociales-type-three text-right">
+    <div class="sociales-type-two text-right">
       <?php print $share; ?>
     </div>      
   </div>  
