@@ -24,7 +24,7 @@
       <h3 class="title-news"><?php print $title; ?></h3>
       <p class="bajada"><?php print $llamada; ?></p>
       <img src="<?php print $image; ?>">
-      <div class="">
+      <div class="sociales-type-one text-right">
         <?php print $share; ?>
       </div>
     </div>
