@@ -120,7 +120,10 @@
           <div class="sociales-single-fixed">
             <?php print render($content['sharethis']); ?>
           </div>
-          <img src="<?php print file_create_url($node->field_imagen['und']['0']['uri']); ?>">
+          <?php
+            $output = field_view_field('node', $node, 'field_imagen');
+            print $output;
+          ?>
           <div class="sociales-single-bottom">
             <?php print render($content['sharethis']); ?>
           </div>
