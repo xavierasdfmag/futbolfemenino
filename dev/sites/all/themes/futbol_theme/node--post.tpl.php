@@ -121,8 +121,9 @@
             <?php print render($content['sharethis']); ?>
           </div>
           <?php
+            $node = node_load($nid);
             $output = field_view_field('node', $node, 'field_imagen');
-            print_r($output) ;
+            print render($output) ;
           ?>
           <div class="sociales-single-bottom">
             <?php print render($content['sharethis']); ?>
