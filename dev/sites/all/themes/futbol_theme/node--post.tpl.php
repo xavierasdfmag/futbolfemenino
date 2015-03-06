@@ -122,7 +122,7 @@
           </div>
           <?php
             $output = field_view_field('node', $node, 'field_imagen');
-            print $output;
+            print_r($output) ;
           ?>
           <div class="sociales-single-bottom">
             <?php print render($content['sharethis']); ?>
