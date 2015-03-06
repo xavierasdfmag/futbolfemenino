@@ -127,7 +127,7 @@
             array(
               'type' => 'image',
               'settings' => array(
-                'image_style' => 'node_image',
+                'image_style' => 'interna_right',
                 'image_link' => 'content',
               ),
             ));
