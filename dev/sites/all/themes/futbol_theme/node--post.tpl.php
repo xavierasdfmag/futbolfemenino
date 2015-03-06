@@ -121,18 +121,10 @@
             <?php print render($content['sharethis']); ?>
           </div>
           <?php
-            $image = field_get_items('node', $node, 'field_imagen');
-            $output = field_view_field('node', $node, 'field_imagen', $image[0], 
-            array(
-              'label'=>'hidden', 
-              'type' => 'image',
-              'settings' => array(
-                'image_style' => 'interna_right',
-                'image_link' => 'content',
-              ),
-            ));
-            print render($output) ;
+            // $output = field_view_field('node', $node, 'field_name');
+            // print $output;
           ?>
+          <img src="<?php print file_create_url($node->field_imagen['und']['0']['uri']); ?>">
           <div class="sociales-single-bottom">
             <?php print render($content['sharethis']); ?>
           </div>
