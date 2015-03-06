@@ -125,6 +125,7 @@
             $image = field_get_items('node', $node, 'field_imagen');
             $output = field_view_field('node', $node, 'field_imagen', $image[0], 
             array(
+              'label'=>'hidden', 
               'type' => 'image',
               'settings' => array(
                 'image_style' => 'interna_right',
