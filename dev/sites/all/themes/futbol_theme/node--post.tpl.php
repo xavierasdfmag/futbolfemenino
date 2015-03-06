@@ -122,7 +122,15 @@
           </div>
           <?php
             $node = node_load($nid);
-            $output = field_view_field('node', $node, 'field_imagen');
+            $image = field_get_items('node', $node, 'field_imagen');
+            $output = field_view_field('node', $node, 'field_imagen', $image[0], 
+            array(
+              'type' => 'image',
+              'settings' => array(
+                'image_style' => 'node_image',
+                'image_link' => 'content',
+              ),
+            ));
             print render($output) ;
           ?>
           <div class="sociales-single-bottom">
