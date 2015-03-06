@@ -83,7 +83,7 @@
 
   <?php 
     // print_r($title); 
-    kpr($node);
+    // kpr($node);
     // dpm($node);
   ?>  
   <div class="row">
@@ -117,8 +117,13 @@
     <div class="small-12 large-8 columns sec-left">
       <div class="row">
         <div class="small-12 columns single-img-portada">
+          <div class="sociales-single-fixed">
+            <?php print render($content['sharethis']); ?>
+          </div>
           <img src="<?php print file_create_url($node->field_imagen['und']['0']['uri']); ?>">
-          <?php print render($content['sharethis']); ?>
+          <div class="sociales-single-bottom">
+            <?php print render($content['sharethis']); ?>
+          </div>
 
         </div>
         <div class="small-12 columns single-contenido">

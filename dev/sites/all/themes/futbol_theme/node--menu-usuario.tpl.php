@@ -42,7 +42,8 @@
       </ul>
       </div>
     <div class="small-12 columns logo">
-      <img src="../img/logo.png">
+      <?php $ruta_logo = theme_get_setting('logo', $GLOBALS['theme']); ?>
+      <img src="<?php print $ruta_logo; ?>" >
     </div>      
 
   <?php print $cuerpo ?>

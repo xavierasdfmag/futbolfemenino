@@ -16,8 +16,8 @@
 <?php  $total = count($view->result); ?>
 
   <?php if ($count == 1) : ?>
-    <img src="<?php print $image; ?>">
-    <figcaption>
+    
+    <figcaption style="background-image: url('<?php print $image; ?>')">
       <div class="row">
         <div class="medium-4 columns portada">
           <p class="tag"><?php print $tag; ?></p>
