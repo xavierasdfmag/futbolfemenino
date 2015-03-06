@@ -121,7 +121,6 @@
             <?php print render($content['sharethis']); ?>
           </div>
           <?php
-            $node = node_load($nid);
             $image = field_get_items('node', $node, 'field_imagen');
             $output = field_view_field('node', $node, 'field_imagen', $image[0], 
             array(
