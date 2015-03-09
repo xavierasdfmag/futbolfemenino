@@ -108,6 +108,7 @@
           print $field_llamada;
         ?>
       </p>
+      <p><?php print $submitted; ?></p>
     </div>
   </div>
 
@@ -125,13 +126,14 @@
             // print $output;
           ?>
           <img src="<?php print file_create_url($node->field_imagen['und']['0']['uri']); ?>">
-          <div class="sociales-single-bottom">
-            <?php print render($content['sharethis']); ?>
-          </div>
 
         </div>
         <div class="small-12 columns single-contenido">
           <?php print $node->body['und']['0']['safe_value'] ?>
+          <div class="sociales-single-bottom">
+            <?php print render($content['sharethis']); ?>
+          </div>
+          
         </div>
 
 
