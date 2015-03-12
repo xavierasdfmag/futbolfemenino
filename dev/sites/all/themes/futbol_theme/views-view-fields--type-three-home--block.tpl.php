@@ -26,7 +26,7 @@
         <?php print $share; ?>
       </div>      
     </div>  
-    <div class="small-4 right columns">
+    <div class="small-4 right">
       <h3 class="title-news"><?php print $title; ?></h3>
       <p class="bajada"><?php print $llamada; ?></p>
 

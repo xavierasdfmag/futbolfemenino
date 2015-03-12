@@ -45,6 +45,9 @@ form.mailchimp-signup-subscribe-form .form-type-checkbox{
     display: none;
 }
 
+.seccion-type-one ul, .seccion-type-two ul, .seccion-type-three ul{
+    margin-top: 12px;
+}
 
 @media only screen and (max-width: 40em) {
     .sociales-type-one{
