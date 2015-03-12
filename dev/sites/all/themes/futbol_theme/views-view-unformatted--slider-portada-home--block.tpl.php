@@ -1,7 +1,6 @@
-<?php
-	$title = node_type_get_name($node);
-	print $title;
-?>
+<?php print render($title_prefix); ?>
+<?php if ($title): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
+<?php print render($title_suffix); ?>
 
 <div class="small-12 columns padding-20">
   <ul class="example-orbit-content" data-orbit>
