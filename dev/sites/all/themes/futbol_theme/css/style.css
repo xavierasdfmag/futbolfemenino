@@ -25,7 +25,12 @@ form.mailchimp-signup-subscribe-form p{
     font-weight: 300;    
 }   
 
-form.mailchimp-signup-subscribe-form input .form-submit{
+form.mailchimp-signup-subscribe-form label{
+    color: #fff;
+    font-family: 'Open Sans',sans-serif;
+}
+
+form.mailchimp-signup-subscribe-form input.form-submit{
     background-color: #cc0099;
     height: 37px !important;
     width: 100% !important;
@@ -34,3 +39,6 @@ form.mailchimp-signup-subscribe-form input .form-submit{
     font-size: 18px; 
 }
 
+form.mailchimp-signup-subscribe-form .form-type-checkbox{
+    display: none;
+}
