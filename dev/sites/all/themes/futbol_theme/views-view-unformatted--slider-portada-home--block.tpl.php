@@ -1,5 +1,5 @@
 <?php
-	global $title;
+	$title = node_type_get_name($node);
 	print $title;
 ?>
 
