@@ -21,13 +21,18 @@
   <div class="small-12 columns">
     <img src="<?php print $image; ?>">
   </div>
+  <div class="small-12 columns show-for-small-only">
+    <div class="sociales-type-two text-right">
+      <?php print $share; ?>
+    </div>      
+  </div>    
   <div class="small-12 medium-7 columns">
     <h3 class="title-news"><?php print $title; ?></h3>
   </div>
   <div class="small-12 medium-5 columns">
     <p class="bajada"><?php print $llamada; ?></p>
   </div>
-  <div class="small-12 columns">
+  <div class="small-12 columns hide-for-small-only">
     <div class="sociales-type-two text-right">
       <?php print $share; ?>
     </div>      

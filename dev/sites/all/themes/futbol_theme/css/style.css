@@ -9,6 +9,8 @@ figure.portada figcaption {
 form.mailchimp-signup-subscribe-form{
     padding: 15px;
     background-color: #330099;
+    margin-bottom: 15px;
+    margin-top: 20px;    
 }
 
 
@@ -41,4 +43,13 @@ form.mailchimp-signup-subscribe-form input.form-submit{
 
 form.mailchimp-signup-subscribe-form .form-type-checkbox{
     display: none;
+}
+
+
+@media only screen and (max-width: 40em) {
+    .sociales-type-one{
+        top: 0px !important;
+    }
+
+
 }
