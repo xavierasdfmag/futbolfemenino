@@ -49,6 +49,12 @@ form.mailchimp-signup-subscribe-form .form-type-checkbox{
 @media only screen and (max-width: 40em) {
     .sociales-type-one{
         top: 0px !important;
+        margin-top: -37px !important;
+    }
+
+
+    .sociales-type-one{
+        margin-top: -37px !important;
     }
 
 
