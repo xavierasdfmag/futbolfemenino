@@ -5,3 +5,32 @@ figure.portada figcaption {
 .sponsor-banner {
     margin-top: 20px;
 }
+
+form.mailchimp-signup-subscribe-form{
+    padding: 15px;
+    background-color: #330099;
+}
+
+
+form.mailchimp-signup-subscribe-form h4{
+    color: #fff;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 400;
+}
+
+form.mailchimp-signup-subscribe-form p{
+    margin-bottom: -5px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 300;    
+}   
+
+form.mailchimp-signup-subscribe-form input .form-submit{
+    background-color: #cc0099;
+    height: 37px !important;
+    width: 100% !important;
+    border: none;
+    color: #fff;
+    font-size: 18px; 
+}
+
