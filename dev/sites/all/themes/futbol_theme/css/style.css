@@ -51,11 +51,12 @@ form.mailchimp-signup-subscribe-form .form-type-checkbox{
         top: 0px !important;
         margin-top: -37px !important;
     }
-
-
-    .sociales-type-one{
+    .sociales-type-two{
         margin-top: -37px !important;
     }
-
+    .sociales-type-three{
+        top: 0px;
+        margin-top: -37px !important;
+    }
 
 }
