@@ -10,6 +10,7 @@
   $title = $fields['title']->content;
   $tag = $fields['field_tag']->content;
   $llamada = $fields['field_llamada']->content;
+  $path_post = $fields['path']->content;
   $image = $fields['field_imagen']->content;
   $count = $fields['counter']->content;
   $share = $fields['sharethis']->content;
@@ -21,7 +22,7 @@
       <p class="title-section"><?php print $tag; ?></p>
     </div>        
     <div class="small-8 left columns">
-      <img src="<?php print $image; ?>">  
+      <a href="<?php print $path_post; ?>"><img src="<?php print $image; ?>"></a>
       <div class="sociales-type-three show-for-small-only text-right">
         <?php print $share; ?>
       </div>      
