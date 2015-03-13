@@ -57,15 +57,16 @@
           ?>
             <?php 
               $path = current_path(); 
-              $partes = split ("\/", $path);
+              $partes = split ('[/.-]', $path);
               $seccion_actual = $partes[1];
+
               if ($link == $seccion_actual) {
                 $class_li = 'active';
               }else{
                 $class_li = ' ';
               }
             ?>
-          <li class="<?php print $class_li; ?>">
+          <li class="<?php print $seccion_actual; ?>">
             <a href='/dev/<?php print $link ?>'><?php print $nombre ?></a>
           </li>
         <?php endforeach; ?>  
