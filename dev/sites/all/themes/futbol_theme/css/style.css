@@ -70,3 +70,12 @@ form.mailchimp-signup-subscribe-form .form-type-checkbox{
     font-weight: 400;
     color: #330066;    
 }
+
+ul.title-area{
+    margin-right: 15px;
+}
+
+.top-bar-section li.active:not(.has-form) a:not(.button):hover {
+    background: #330066 !important;
+    color: #fff !important;
+}
