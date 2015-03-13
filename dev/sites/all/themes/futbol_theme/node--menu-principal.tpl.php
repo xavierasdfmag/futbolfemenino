@@ -8,16 +8,13 @@
   $titulo = $node->title;
   $cuerpo = $node->body['und']['0']['value'];
   $fids   = $node->field_items_principal['und'];
-  print_r($fids);
-  kpr($node);
-  dpm($node);
+  // print_r($fids);
+  // kpr($node);
+  // dpm($node);
 
   
 ?>
-      <?php
-        $path = current_path();
-        print $path;
-      ?>
+
       <div class="top-bar-container contain-to-grid sticky" role="navigation">
         <nav class="top-bar" data-topbar role="navigation">
           <ul class="title-area">
@@ -58,7 +55,17 @@
             }
             $link = $field[$num]->field_link_principal['und'][0]['value'];
           ?>
-          <li>
+            <?php 
+              $path = current_path(); 
+              $partes = split ("\/", $path);
+              $seccion_actual = $partes[1];
+              if ($link == $seccion_actual) {
+                $class_li = 'active';
+              }else{
+                $class_li = ' ';
+              }
+            ?>
+          <li class="<?php print $class_li; ?>">
             <a href='/dev/<?php print $link ?>'><?php print $nombre ?></a>
           </li>
         <?php endforeach; ?>  
