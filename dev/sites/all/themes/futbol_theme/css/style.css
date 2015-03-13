@@ -63,3 +63,10 @@ form.mailchimp-signup-subscribe-form .form-type-checkbox{
     }
 
 }
+
+.pane-page-title h1{
+    text-align: left;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 400;
+    color: #330066;    
+}
