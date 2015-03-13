@@ -66,7 +66,7 @@
                 $class_li = ' ';
               }
             ?>
-          <li class="<?php print $seccion_actual; ?>">
+          <li class="<?php print $class_li; ?>">
             <a href='/dev/<?php print $link ?>'><?php print $nombre ?></a>
           </li>
         <?php endforeach; ?>  
