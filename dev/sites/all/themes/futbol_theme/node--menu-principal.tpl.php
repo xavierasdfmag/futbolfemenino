@@ -11,9 +11,12 @@
   // print_r($fids);
   
 ?>
-      <?php print $theme_path ;?>
-      <?php print $path ;?>
-      <?php print $base_url ;?>
+      <?php
+        $path = current_path();
+        $path_alias = drupal_lookup_path('alias',$path);
+        print $path;
+        print $path_alias;
+      ?>
       <div class="top-bar-container contain-to-grid sticky" role="navigation">
         <nav class="top-bar" data-topbar role="navigation">
           <ul class="title-area">
