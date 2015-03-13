@@ -13,6 +13,7 @@
   $image = $fields['field_imagen']->content;
   $count = $fields['counter']->content;
   $share = $fields['sharethis']->content;
+  $path_post = $fields['path']->content;
 ?>
 <?php  $total = count($view->result); ?>
 
@@ -23,7 +24,7 @@
     <div class="small-12 medium-8 columns">
       <h3 class="title-news"><?php print $title; ?></h3>
       <p class="bajada"><?php print $llamada; ?></p>
-      <img src="<?php print $image; ?>">
+      <a href="<?php print $path_post; ?>"><img src="<?php print $image; ?>"></a>
       <div class="sociales-type-one text-right">
         <?php print $share; ?>
       </div>
