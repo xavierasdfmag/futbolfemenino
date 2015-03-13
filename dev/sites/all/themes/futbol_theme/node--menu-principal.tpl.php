@@ -11,7 +11,9 @@
   // print_r($fids);
   
 ?>
-
+      <?php print $theme_path ;?>
+      <?php print $path ;?>
+      <?php print $base_url ;?>
       <div class="top-bar-container contain-to-grid sticky" role="navigation">
         <nav class="top-bar" data-topbar role="navigation">
           <ul class="title-area">
@@ -40,29 +42,6 @@
             <ul class="right">
               <li><a href="#" data-reveal-id="modalMenu">VER TODO <span class="icon-menu"></a></li>
             </ul>
-
-            <!-- Left Nav Section -->
-<!--             <ul class="left">
-              <li><a href="#">TENDENCIA</a></li>
-              <li><a href="#">LOCALES</a></li>
-              <li><a href="#">MUNDO</a></li>
-              <li class="has-dropdown">
-                <a href="#">FUNDAMENTOS</a>
-                <ul class="dropdown">
-                  <li><a href="#">First link in dropdown</a></li>
-                  <li class="active"><a href="#">Active link in dropdown</a></li>
-                </ul>
-              </li>
-              <li><a href="#">LA AGENDA</a></li>
-              <li><a href="#">LOS TOPS</a></li>
-              <li class="has-dropdown">
-                <a href="#">REVISTA</a>
-                <ul class="dropdown">
-                  <li><a href="#">First link in dropdown</a></li>
-                  <li class="active"><a href="#">Active link in dropdown</a></li>
-                </ul>
-              </li>
-            </ul> -->
       <ul class="left">
         <?php foreach ($fids as $fid) : ?>
           <?php 
