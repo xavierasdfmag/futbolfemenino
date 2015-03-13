@@ -56,10 +56,7 @@
             $link = $field[$num]->field_link_principal['und'][0]['value'];
           ?>
             <?php 
-              $path = current_path(); 
-              $partes = split ('[/.-]', $path);
-              $seccion_actual = $partes[1];
-
+              $seccion_actual = current_path(); 
               if ($link == $seccion_actual) {
                 $class_li = 'active';
               }else{
