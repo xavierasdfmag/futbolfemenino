@@ -1,8 +1,4 @@
-  <!-- Cerrando la parte izquierda-->
-  <!-- </div> -->
-  <!-- Cerrando la parte izquierda-->
 
-    <div class="small-12 medium-12 large-4 columns">
       <div class="row show-for-large-up">
 
         <div class="large-12 columns text-right">
