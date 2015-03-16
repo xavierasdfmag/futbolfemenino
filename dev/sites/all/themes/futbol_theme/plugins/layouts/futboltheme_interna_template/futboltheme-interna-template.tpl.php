@@ -20,11 +20,14 @@
 <div id="modalMenu" class="reveal-modal" data-reveal>
   <?php print render($content['mega-menu']); ?>
 </div>
-<div class="">
+<div class="row contenedor">
 
-      <?php print render($content['left-side']); ?>
-
-      <?php print render($content['right-side']); ?>
+  <div class="small-12 medium-12 large-8 columns sec-left">
+    <?php print render($content['left-side']); ?>
+  </div>
+  <div class="small-12 medium-12 large-4 columns">
+    <?php print render($content['right-side']); ?>
+  </div>
 
 </div>
 <div class="row banner-sponsor">
