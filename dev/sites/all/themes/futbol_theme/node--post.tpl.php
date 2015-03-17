@@ -108,7 +108,15 @@
           print $field_llamada;
         ?>
       </p>
-      <p><?php print $submitted; ?></p>
+      <?php
+        if ($submitted) { ?>
+          <p><?php
+           echo "Publicado: " . date( "F j, Y",$node->created); 
+           echo "Autor: " . $node->uid; 
+          ?></p>
+      <?php             
+        }
+      ?>
     </div>
   </div>
 
