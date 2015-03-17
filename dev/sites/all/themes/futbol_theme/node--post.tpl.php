@@ -113,8 +113,9 @@
           <p><?php
             $user_fields = user_load($node->uid);
             $firstname = $user_fields->field_firstname['und']['0']['value'];
-            setlocale(LC_TIME,"es_ES");
-            echo "Publicado: " . date( "F j, Y",$node->created) . " "; 
+            setlocale(LC_TIME, 'es_ES.UTF-8');
+            // setlocale(LC_TIME,"es_ES");
+            echo "Publicado: " . strftime("%A, %d de %B de %Y", $node->created) . " "; 
             echo " Autor: " . $firstname; 
           ?></p>
       <?php             
