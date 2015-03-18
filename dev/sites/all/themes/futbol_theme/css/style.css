@@ -85,3 +85,12 @@ figure.portada figcaption{
     -moz-box-shadow: inset 2000px 0px 100px 50px rgba(50,50,50,0.25),inset -2000px 0px 100px 50px rgba(50,50,50,0.25) !important;
     -webkit-box-shadow: inset 2000px 0px 100px 50px rgba(50,50,50,0.25),inset -2000px 0px 100px 50px rgba(50,50,50,0.25) !important;
 }
+
+.pane-term-name{
+    margin-top: 15px;
+}
+
+.pane-term-name h1{
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 700;
+}
