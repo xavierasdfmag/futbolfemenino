@@ -11,7 +11,7 @@
   // print_r($fids);
   
 ?>
-    <div class="small-12 columns">
+    <div class="small-12 columns text-center hide-for-small-only">
       <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
       <ins class="adsbygoogle"
            style="display:inline-block;width:728px;height:90px"
@@ -21,6 +21,16 @@
       (adsbygoogle = window.adsbygoogle || []).push({});
       </script>      
     </div>
+    <div class="small-12 columns text-center show-for-small-only">
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <ins class="adsbygoogle"
+           style="display:inline-block;width:300px;height:250px"
+           data-ad-client="ca-pub-3000094281853126"
+           data-ad-slot="7900040372"></ins>
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>    
+    </div>    
 
     <div class="small-12 columns menu-institucional">
       <ul class="inline-list left">
