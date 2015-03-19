@@ -10,12 +10,13 @@
   $title = $fields['title']->content;
   $tag = $fields['field_tag']->content;
   $llamada = $fields['field_llamada']->content;
+  $path_post = $fields['path']->content;  
   $image = $fields['field_imagen']->content;
 ?>
 
   <div class="row">
     <div class="small-12 medium-5 columns">
-      <img src="<?php print $image; ?>">
+      <a href="<?php print $path_post; ?>"><img src="<?php print $image; ?>"></a>
     </div>
     <div class="small-12 medium-7 columns">
       <p class="tag"><?php print $tag; ?></p>

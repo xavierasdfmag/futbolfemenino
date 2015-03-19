@@ -18,8 +18,6 @@
 <div class="small-6 medium-4 columns">
   <figure>
       <a href="<?php print $path_post; ?>"><img src="<?php print $image; ?>"></a>
-    <figcaption>
-    </figcaption>
   </figure>
   <p class="llamada"><?php print $tag; ?></p>
   <p class="titulo"><?php print $title; ?></p>
