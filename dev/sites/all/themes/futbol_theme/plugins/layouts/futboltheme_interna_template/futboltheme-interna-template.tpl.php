@@ -23,7 +23,11 @@
 <div class="">
 
       <?php print render($content['left-side']); ?>
+  <!-- Cerrando la parte izquierda-->
+  </div>
+  <!-- Cerrando la parte izquierda-->
 
+    <div class="small-12 medium-12 large-4 columns">
       <?php print render($content['right-side']); ?>
 
 </div>

@@ -13,29 +13,37 @@
   $image = $fields['field_imagen']->content;
   $count = $fields['counter']->content;
   $share = $fields['sharethis']->content;
+  $path_post = $fields['path']->content;
 ?>
-<?php  $total = count($view->result); ?>
+<?php  //$total = count($view->result); ?>
 
-  <?php if ($count == 1) : ?>
+  <?php //if ($count == 1) : ?>
+  <div class="row seccion-type-one">  
     <div class="small-12 columns">
       <p class="title-section"><?php print $tag; ?></p>
     </div>
     <div class="small-12 medium-8 columns">
       <h3 class="title-news"><?php print $title; ?></h3>
       <p class="bajada"><?php print $llamada; ?></p>
-      <img src="<?php print $image; ?>">
+      <a href="<?php print $path_post; ?>"><img src="<?php print $image; ?>"></a>
       <div class="sociales-type-one text-right">
         <?php print $share; ?>
       </div>
     </div>
     <div class="small-12 medium-4 columns">
-      <ul>
-  <?php elseif($count > 1 && $count <= $total) : ?>
-        <li><a href="#"><?php print $title; ?></a></li>
-  <?php elseif($count == $total) : ?>
-      </ul>
+      <p>asd?</p>
     </div>
+  </div>
 
 
-  <?php endif ?>
-  <?php $count++; ?>
+    <!-- <div class="small-12 medium-4 columns"> -->
+      <!-- <ul> -->
+  <?php //elseif($count > 1 && $count <= $total) : ?>
+        <!-- <li><a href="#"><?php print $title; ?></a></li> -->
+  <?php //elseif($count == $total) : ?>
+      <!-- </ul> -->
+    <!-- </div> -->
+
+
+  <?php //endif ?>
+  <?php //$count++; ?>

@@ -1,0 +1,96 @@
+figure.portada figcaption {
+    background-position: 50% 0% !important;
+}
+
+.sponsor-banner {
+    margin-top: 20px;
+}
+
+form.mailchimp-signup-subscribe-form{
+    padding: 15px;
+    background-color: #330099;
+    margin-bottom: 15px;
+    margin-top: 20px;    
+}
+
+
+form.mailchimp-signup-subscribe-form h4{
+    color: #fff;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 400;
+}
+
+form.mailchimp-signup-subscribe-form p{
+    margin-bottom: -5px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 300;    
+}   
+
+form.mailchimp-signup-subscribe-form label{
+    color: #fff;
+    font-family: 'Open Sans',sans-serif;
+}
+
+form.mailchimp-signup-subscribe-form input.form-submit{
+    background-color: #cc0099;
+    height: 37px !important;
+    width: 100% !important;
+    border: none;
+    color: #fff;
+    font-size: 18px; 
+}
+
+form.mailchimp-signup-subscribe-form .form-type-checkbox{
+    display: none;
+}
+
+.seccion-type-one ul, .seccion-type-two ul, .seccion-type-three ul{
+    margin-top: 12px;
+}
+
+@media only screen and (max-width: 40em) {
+    .sociales-type-one{
+        top: 0px !important;
+        margin-top: -37px !important;
+    }
+    .sociales-type-two{
+        margin-top: -37px !important;
+    }
+    .sociales-type-three{
+        top: 0px;
+        margin-top: -37px !important;
+    }
+
+}
+
+.pane-page-title h1{
+    text-align: left;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 400;
+    color: #330066;    
+}
+
+ul.title-area{
+    margin-right: 15px !important;
+}
+
+.top-bar-section li.active a {
+    background: #330066 !important;
+    color: #fff !important;
+}
+
+figure.portada figcaption{
+    box-shadow: inset 2000px 0px 100px 50px rgba(50,50,50,0.25),inset -2000px 0px 100px 50px rgba(50,50,50,0.25) !important;
+    -moz-box-shadow: inset 2000px 0px 100px 50px rgba(50,50,50,0.25),inset -2000px 0px 100px 50px rgba(50,50,50,0.25) !important;
+    -webkit-box-shadow: inset 2000px 0px 100px 50px rgba(50,50,50,0.25),inset -2000px 0px 100px 50px rgba(50,50,50,0.25) !important;
+}
+
+.pane-term-name{
+    margin-top: 15px;
+}
+
+.pane-term-name h1{
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 700;
+}

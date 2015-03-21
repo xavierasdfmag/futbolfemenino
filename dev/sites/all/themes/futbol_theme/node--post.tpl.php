@@ -108,6 +108,20 @@
           print $field_llamada;
         ?>
       </p>
+      <?php
+        if ($submitted) { ?>
+          <p><?php
+            setlocale(LC_TIME, 'es_ES.UTF-8');
+            print $submitted;
+            // $user_fields = user_load($node->uid);
+            // $firstname = $user_fields->field_firstname['und']['0']['value'];
+            // setlocale(LC_TIME,"es_ES");
+            // echo "Publicado: " . strftime("%A, %d de %B de %Y", $node->created) . " "; 
+            // echo " Autor: " . $firstname; 
+          ?></p>
+      <?php             
+        }
+      ?>
     </div>
   </div>
 
@@ -120,14 +134,19 @@
           <div class="sociales-single-fixed">
             <?php print render($content['sharethis']); ?>
           </div>
+          <?php
+            // $output = field_view_field('node', $node, 'field_name');
+            // print $output;
+          ?>
           <img src="<?php print file_create_url($node->field_imagen['und']['0']['uri']); ?>">
-          <div class="sociales-single-bottom">
-            <?php print render($content['sharethis']); ?>
-          </div>
 
         </div>
         <div class="small-12 columns single-contenido">
           <?php print $node->body['und']['0']['safe_value'] ?>
+          <div class="sociales-single-bottom">
+            <?php print render($content['sharethis']); ?>
+          </div>
+          
         </div>
 
 

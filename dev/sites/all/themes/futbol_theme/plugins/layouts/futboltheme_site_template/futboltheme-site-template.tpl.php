@@ -20,7 +20,7 @@
 <div id="modalMenu" class="reveal-modal" data-reveal>
   <?php print render($content['mega-menu']); ?>
 </div>
-<div class="show-for-large-up">
+<div class="show-for-medium-up row">
   <?php print render($content['post-portada']); ?>        
 </div>
 <div class="bg-white">

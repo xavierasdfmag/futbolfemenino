@@ -9,6 +9,9 @@
   $cuerpo = $node->body['und']['0']['value'];
   $fids   = $node->field_items_principal['und'];
   // print_r($fids);
+  // kpr($node);
+  // dpm($node);
+
   
 ?>
 
@@ -40,29 +43,6 @@
             <ul class="right">
               <li><a href="#" data-reveal-id="modalMenu">VER TODO <span class="icon-menu"></a></li>
             </ul>
-
-            <!-- Left Nav Section -->
-<!--             <ul class="left">
-              <li><a href="#">TENDENCIA</a></li>
-              <li><a href="#">LOCALES</a></li>
-              <li><a href="#">MUNDO</a></li>
-              <li class="has-dropdown">
-                <a href="#">FUNDAMENTOS</a>
-                <ul class="dropdown">
-                  <li><a href="#">First link in dropdown</a></li>
-                  <li class="active"><a href="#">Active link in dropdown</a></li>
-                </ul>
-              </li>
-              <li><a href="#">LA AGENDA</a></li>
-              <li><a href="#">LOS TOPS</a></li>
-              <li class="has-dropdown">
-                <a href="#">REVISTA</a>
-                <ul class="dropdown">
-                  <li><a href="#">First link in dropdown</a></li>
-                  <li class="active"><a href="#">Active link in dropdown</a></li>
-                </ul>
-              </li>
-            </ul> -->
       <ul class="left">
         <?php foreach ($fids as $fid) : ?>
           <?php 
@@ -75,7 +55,15 @@
             }
             $link = $field[$num]->field_link_principal['und'][0]['value'];
           ?>
-          <li>
+            <?php 
+              $seccion_actual = current_path(); 
+              if ($link == $seccion_actual) {
+                $class_li = 'active';
+              }else{
+                $class_li = ' ';
+              }
+            ?>
+          <li class="<?php print $class_li; ?>">
             <a href='/dev/<?php print $link ?>'><?php print $nombre ?></a>
           </li>
         <?php endforeach; ?>  

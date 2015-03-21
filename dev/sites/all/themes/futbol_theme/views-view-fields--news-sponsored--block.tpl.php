@@ -10,15 +10,14 @@
   //die(print_r($fields));
 	$title = $fields['title']->content;
 	$tag = $fields['field_tag']->content;
+  $path_post = $fields['path']->content;
   $image = $fields['field_imagen']->content;
 	$share = $fields['sharethis']->content;
 ?>
 
 <div class="small-6 medium-4 columns">
   <figure>
-      <img src="<?php print $image; ?>">
-    <figcaption>
-    </figcaption>
+      <a href="<?php print $path_post; ?>"><img src="<?php print $image; ?>"></a>
   </figure>
   <p class="llamada"><?php print $tag; ?></p>
   <p class="titulo"><?php print $title; ?></p>
