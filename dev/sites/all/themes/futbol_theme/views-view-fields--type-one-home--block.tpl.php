@@ -18,7 +18,7 @@
 <?php  //$total = count($view->result); ?>
 
   <?php //if ($count == 1) : ?>
-<div class="row seccion-type-one">  
+  <div class="row seccion-type-one">  
     <div class="small-12 columns">
       <p class="title-section"><?php print $tag; ?></p>
     </div>
@@ -29,6 +29,9 @@
       <div class="sociales-type-one text-right">
         <?php print $share; ?>
       </div>
+    </div>
+    <div class="small-12 medium-4 columns">
+      <p>asd?</p>
     </div>
   </div>
 
