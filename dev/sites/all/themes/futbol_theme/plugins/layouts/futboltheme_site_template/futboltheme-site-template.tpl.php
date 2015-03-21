@@ -34,7 +34,7 @@
       </div>
     <!-- </div> -->
     <!-- <div class="right-side"> -->
-      <div class="small-12 medium-12 large-4 columns">
+      <div class="small-12 medium-12 large-4 columns sec-right">
         <?php print render($content['right-side']); ?>
       </div>
     <!-- </div> -->
