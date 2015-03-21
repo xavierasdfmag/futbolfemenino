@@ -7,7 +7,7 @@ stylesheets[all][] = css/app.css
 stylesheets[all][] = css/style.css
 stylesheets[all][] = css/icons.css
 
-scripts[] = jquery.infinitescroll.min.js
+scripts[] = js/jquery.infinitescroll.min.js
 
 plugins[panels][layouts] = plugins/layouts
 plugins[panels][styles] = plugins/styles
