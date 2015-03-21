@@ -30,7 +30,9 @@
   <div class="row contenedor">
     <!-- <div class="left-side"> -->
       <div class="small-12 medium-12 large-8 columns sec-left">
-        <?php print render($content['left-side']); ?>
+        <div class="recursivo">
+          <?php print render($content['left-side']); ?>
+        </div>
       </div>
     <!-- </div> -->
     <!-- <div class="right-side"> -->
