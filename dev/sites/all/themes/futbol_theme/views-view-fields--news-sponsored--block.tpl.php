@@ -13,13 +13,17 @@
   $path_post = $fields['path']->content;
   $image = $fields['field_imagen']->content;
 	$share = $fields['sharethis']->content;
+  // $count = $fields['counter']->content;  
 ?>
 
-<div class="small-6 medium-4 columns">
-  <figure>
-      <a href="<?php print $path_post; ?>"><img src="<?php print $image; ?>"></a>
-  </figure>
-  <p class="llamada"><?php print $tag; ?></p>
-  <p class="titulo"><?php print $title; ?></p>
-  <p><?php print $share; ?></p>
-</div>
+
+
+  
+    <div class="small-6 medium-4 columns">
+      <figure>
+          <a href="<?php print $path_post; ?>"><img src="<?php print $image; ?>"></a>
+      </figure>
+      <p class="llamada"><?php print $tag; ?></p>
+      <p class="titulo"><?php print $title; ?></p>
+      <p><?php print $share; ?></p>
+    </div>
