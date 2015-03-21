@@ -53,7 +53,7 @@ $(document).foundation({
 
         $container.imagesLoaded( function(){
           $container.infinitescroll({
-            navSelector  : 'div.container-type-one .pager',    // selector for the paged navigation
+            navSelector  : 'ul.pager',    // selector for the paged navigation
             nextSelector : 'div.container-type-one .pager-next a',  // selector for the NEXT link (to page 2)
             itemSelector : 'div.container-type-one',     // selector for all items you'll retrieve
             loading: {
