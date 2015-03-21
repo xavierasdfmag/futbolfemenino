@@ -53,9 +53,9 @@ $(document).foundation({
 
         $container.imagesLoaded( function(){
           $container.infinitescroll({
-            navSelector  : 'div.autopager .pager',    // selector for the paged navigation
-            nextSelector : 'div.autopager .pager-next a',  // selector for the NEXT link (to page 2)
-            itemSelector : 'div.autopager .views-row',     // selector for all items you'll retrieve
+            navSelector  : 'div.container-type-one .pager',    // selector for the paged navigation
+            nextSelector : 'div.container-type-one .pager-next a',  // selector for the NEXT link (to page 2)
+            itemSelector : 'div.container-type-one',     // selector for all items you'll retrieve
             loading: {
               finishedMsg: 'No more pages to load.',
               img: Drupal.settings.basePath + 'sites/all/themes/futbol_theme/images/loading.gif'
