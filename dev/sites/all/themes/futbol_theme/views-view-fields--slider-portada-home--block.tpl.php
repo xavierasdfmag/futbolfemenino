@@ -9,13 +9,14 @@
 	// dpm($fields);
 	$title = $fields['title']->content;
 	$tag = $fields['field_tag']->content;
+  $path_post = $fields['path']->content;
 	$image = $fields['field_imagen']->content;
 ?>
 
 <div class="small-4 columns">
   <div class="row">
     <div class="small-4 columns imagen">
-      <img src="<?php print $image; ?>">
+      <a href="<?php print $path_post; ?>"><img src="<?php print $image; ?>"></a>
     </div>
     <div class="small-8 columns noticia">
       <p class="llamada"><?php print $tag; ?></p>

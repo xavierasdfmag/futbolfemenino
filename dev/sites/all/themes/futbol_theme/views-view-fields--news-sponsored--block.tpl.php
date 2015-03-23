@@ -19,7 +19,7 @@
 
 
   
-    <div class="small-6 medium-4 columns">
+    <div class="small-6 medium-4 columns left">
       <figure>
           <a href="<?php print $path_post; ?>"><img src="<?php print $image; ?>"></a>
       </figure>
