@@ -55,7 +55,7 @@ $(document).foundation({
           $container.infinitescroll({
             navSelector  : 'ul.pager',    // selector for the paged navigation
             nextSelector : 'li.pager-next a',  // selector for the NEXT link (to page 2)
-            itemSelector : 'div.container-type-one',     // selector for all items you'll retrieve
+            itemSelector : 'div.seccion-type-one',     // selector for all items you'll retrieve
             loading: {
               finishedMsg: 'No more pages to load.',
               img: Drupal.settings.basePath + 'sites/all/themes/futbol_theme/images/loading.gif'
