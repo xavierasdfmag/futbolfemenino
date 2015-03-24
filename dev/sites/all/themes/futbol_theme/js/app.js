@@ -66,3 +66,12 @@ $(document).foundation({
     }
   };
 })(jQuery);
+
+$('#body').infinitescroll({
+      navSelector  : 'ul.pager',            
+                     // selector for the paged navigation (it will be hidden)
+      nextSelector : 'li.pager-next a',   
+                     // selector for the NEXT link (to page 2)
+      itemSelector : 'div.container-type-one'        
+                     // selector for all items you'll retrieve
+    });
