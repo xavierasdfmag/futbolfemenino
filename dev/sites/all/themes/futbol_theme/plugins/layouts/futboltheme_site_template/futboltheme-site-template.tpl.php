@@ -44,11 +44,11 @@
 </div>
 <div class="row contenedor">
   <div class="small-12 medium-12 large-8 columns sec-left">
-    <div class="recursivo">
-      <div class="container-type-one content">
+    <!-- <div class="recursivo"> -->
+      <!-- <div class="container-type-one content"> -->
         <?php print render($content['left-side-scroll']); ?>
-      </div>
-    </div>
+      <!-- </div> -->
+    <!-- </div> -->
   </div>
   <div class="small-12 medium-12 large-4 columns sec-right">
     <?php print render($content['right-side-scroll']); ?>
