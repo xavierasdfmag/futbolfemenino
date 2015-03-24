@@ -48,7 +48,7 @@ $(document).foundation({
       $(function(){
 
 
-        var $container = $('div.container-type-one');
+        var $container = $('div.recursivo');
 
 
         $container.imagesLoaded( function(){
