@@ -28,11 +28,9 @@
  */
 ?>
 
+<div class="container-type-one">
   <?php print $rows; ?>
-
-<?php if ($pager): ?>
-  <?php print $pager; ?>
-<?php endif; ?>
+</div>
 
 <?php if ($pager): ?>
   <?php print $pager; ?>
