@@ -15,7 +15,9 @@ $plugin = array(
     'left-side' => t('Left Side'),
     'right-side' => t('Right Side'),
     'banner-sponsor' => t('Banner Sponsor'),
-    'sponsor-news' => t('Sponsor News')
+    'sponsor-news' => t('Sponsor News'),
+    'left-side-scroll' => t('Left Side Scroll'),
+    'right-side-scroll' => t('Right Side Scroll')    
   ),
 );
 

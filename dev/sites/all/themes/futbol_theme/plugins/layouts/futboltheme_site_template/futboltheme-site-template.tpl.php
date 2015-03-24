@@ -23,23 +23,17 @@
 <div class="show-for-medium-up row">
   <?php print render($content['post-portada']); ?>        
 </div>
-<div class="bg-white">
-  <div class="row slider-portada show-for-large-up">
-    <?php print render($content['slider-portada']); ?>
+<div class="row slider-portada show-for-large-up">
+  <?php print render($content['slider-portada']); ?>
+</div>
+<div class="row contenedor">
+  <div class="small-12 medium-12 large-8 columns sec-left">
+    <div class="recursivo">
+      <?php print render($content['left-side']); ?>
+    </div>
   </div>
-  <div class="row contenedor">
-    <!-- <div class="left-side"> -->
-      <div class="small-12 medium-12 large-8 columns sec-left">
-        <div class="recursivo">
-          <?php print render($content['left-side']); ?>
-        </div>
-      </div>
-    <!-- </div> -->
-    <!-- <div class="right-side"> -->
-      <div class="small-12 medium-12 large-4 columns sec-right">
-        <?php print render($content['right-side']); ?>
-      </div>
-    <!-- </div> -->
+  <div class="small-12 medium-12 large-4 columns sec-right">
+    <?php print render($content['right-side']); ?>
   </div>
 </div>
 <div class="row sponsor-banner">
@@ -47,4 +41,14 @@
 </div>
 <div class="row sponsor-news">
   <?php print render($content['sponsor-news']); ?>
+</div>
+<div class="row contenedor">
+  <div class="small-12 medium-12 large-8 columns sec-left">
+    <div class="recursivo">
+      <?php print render($content['left-side-scroll']); ?>
+    </div>
+  </div>
+  <div class="small-12 medium-12 large-4 columns sec-right">
+    <?php print render($content['right-side-scroll']); ?>
+  </div>
 </div>
