@@ -28,6 +28,7 @@
  */
 ?>
 
+  <?php print $css_class; ?>
   <?php print $rows; ?>
 
 <?php if ($pager): ?>
