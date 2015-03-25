@@ -34,6 +34,7 @@
     <div class="small-12 medium-4 columns">
       <p><?php echo '123' ; ?></p>
       <p><?php print_r($views) ; ?></p>
+      <p><?php print $views ; ?></p>
     </div>
   </div>
 
