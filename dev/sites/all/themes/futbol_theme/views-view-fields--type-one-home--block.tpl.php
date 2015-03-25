@@ -34,6 +34,7 @@
     <div class="small-12 medium-4 columns">
       <p><?php //print $views ; ?></p>
       <?php print views_embed_view('type_one_home','relacionada'); ?>
+      <?php print views_embed_view('type_one_home','block_2'); ?>
     </div>
   </div>
 
