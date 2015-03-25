@@ -5,7 +5,7 @@
   $path = $base_url.'/'.$theme_path;
   $pathfile = variable_get('file_public_path', conf_path() . '/files/'); 
 
-	print_r($fields);
+	// kpr($fields);
 	// dpm($fields);
   $title = $fields['title']->content;
   $views = $fields['view']->content;
@@ -32,6 +32,7 @@
       </div>
     </div>
     <div class="small-12 medium-4 columns">
+      <p><?php echo '123' ; ?></p>
       <p><?php print_r($views) ; ?></p>
     </div>
   </div>
