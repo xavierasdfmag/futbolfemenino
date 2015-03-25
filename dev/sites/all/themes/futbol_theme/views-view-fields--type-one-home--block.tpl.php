@@ -32,7 +32,7 @@
       </div>
     </div>
     <div class="small-12 medium-4 columns">
-      <p><?php print $views; ?></p>
+      <p><?php print_r($views) ; ?></p>
     </div>
   </div>
 
