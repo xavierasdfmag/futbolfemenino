@@ -5,9 +5,10 @@
   $path = $base_url.'/'.$theme_path;
   $pathfile = variable_get('file_public_path', conf_path() . '/files/'); 
 
-	kpr($fields);
-	dpm($fields);
+	// kpr($fields);
+	// dpm($fields);
   $title = $fields['title']->content;
+  $views = $fields['view']->content;
   $tag = $fields['field_tag']->content;
   $llamada = $fields['field_llamada']->content;
   $image = $fields['field_imagen']->content;
@@ -31,7 +32,7 @@
       </div>
     </div>
     <div class="small-12 medium-4 columns">
-      <p>asd?</p>
+      <p><?php print $views; ?></p>
     </div>
   </div>
 
