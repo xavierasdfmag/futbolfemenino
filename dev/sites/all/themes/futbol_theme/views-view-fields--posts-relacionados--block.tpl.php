@@ -34,10 +34,16 @@
     <div class="small-12 medium-4 columns">
       <?php
       if ($tag != '') {
-        print('hola');
+        
         $view = views_get_view('posts_relacionados_hijos');
-        // print_r($view);
         $view->display_handler->display->display_options['filters']['field_tag_tid']['value'] = $tag;
+        die(print_r($view));
+        $handler->display->display_options['filters']['field_tag_tid']['id'] = 'field_tag_tid';
+        $handler->display->display_options['filters']['field_tag_tid']['table'] = 'field_data_field_tag';
+        $handler->display->display_options['filters']['field_tag_tid']['field'] = 'field_tag_tid';
+        $handler->display->display_options['filters']['field_tag_tid']['operator'] = 'not empty';
+        $handler->display->display_options['filters']['field_tag_tid']['value'] = '';
+        $handler->display->display_options['filters']['field_tag_tid']['vocabulary'] = 'tags';
         $view->execute();
         print $view->render();
 
