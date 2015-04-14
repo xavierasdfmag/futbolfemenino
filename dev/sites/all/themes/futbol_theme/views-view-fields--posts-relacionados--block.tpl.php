@@ -40,6 +40,7 @@
         $view = views_get_view('posts_relacionados_hijos');
         //$view->display_handler->display->display_options['filters']['field_tag_tid']['value'] = $tag;
         $view->set_display('block');
+        $view->pre_execute();
         $view->display_handler->display->display_options['filters']['field_tag_tid']['id'] = 'field_tag_tid';
         $view->display_handler->display->display_options['filters']['field_tag_tid']['table'] = 'field_data_field_tag';
         $view->display_handler->display->display_options['filters']['field_tag_tid']['field'] = 'field_tag_tid';
