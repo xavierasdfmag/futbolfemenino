@@ -34,34 +34,13 @@
     <div class="small-12 medium-4 columns">
       <?php
       if ($tags != '') {
-        foreach ($tags as $key => $tag) {
-          print $tag;
-        }  
+        $array = array('45+47');
         $view = views_get_view('posts_relacionados_hijos');
-        //$view->display_handler->display->display_options['filters']['field_tag_tid']['value'] = $tag;
-        $view->set_display('block');
+        $view->set_display("block");
+        $view->set_arguments($array);
         $view->pre_execute();
-        $view->display_handler->display->display_options['filters']['field_tag_tid']['id'] = 'field_tag_tid';
-        $view->display_handler->display->display_options['filters']['field_tag_tid']['table'] = 'field_data_field_tag';
-        $view->display_handler->display->display_options['filters']['field_tag_tid']['field'] = 'field_tag_tid';
-        $view->display_handler->display->display_options['filters']['field_tag_tid']['value'] = array(
-          $tag => $tag,  
-        );
-        $view->display_handler->display->display_options['filters']['field_tag_tid']['vocabulary'] = 'tags';
-        // $view->display_handler->display->display_options['filters']['field_tag_tid']['value'] = array(
-          // 0 => $tag
-        // );
-        // die(print_r($view));
-        $view->is_cacheable = FALSE; 
-        // $view->pre_execute();  
         $view->execute();
-        print $view->render();
-
-
-        // $view = views_get_view('view_machine_name');
-        // $view->init_display('default');
-        // $view->execute();
-        // print $view->render();
+        print = $view->render(); 
       }  
       ?>
     </div>
