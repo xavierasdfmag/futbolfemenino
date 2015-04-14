@@ -36,9 +36,17 @@
       if ($tag != '') {
         print('hola');
         $view = views_get_view('posts_relacionados_hijos');
-        // print_r($view);`
+        // print_r($view);
+        $view->display_handler->display->display_options['filters']['tag']['default_value'] = $tag;
         $view->execute();
         print $view->render();
+
+
+        // $view = views_get_view('view_machine_name');
+        // $view->init_display('default');
+        // $view->is_cacheable = FALSE;  
+        // $view->execute();
+        // print $view->render();
       }  
       ?>
     </div>
