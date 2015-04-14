@@ -33,7 +33,7 @@
     </div>
     <div class="small-12 medium-4 columns">
       <?php
-      if ($tag) {
+      if ($tag != '') {
         function futbol_theme_views_pre_view(&$view) {
           if ($view->name == 'posts_relacionados_hijos') {
             kpr($view->display['default']->handler->options['filters']);
