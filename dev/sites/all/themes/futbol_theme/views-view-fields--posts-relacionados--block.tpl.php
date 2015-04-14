@@ -39,7 +39,7 @@
         // print_r($view);`
         // $view->execute();
         // $response = $view->result;
-        $view->execute_display()
+        $view->execute_display();
       }  
       ?>
     </div>
