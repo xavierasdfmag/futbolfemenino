@@ -49,7 +49,7 @@
         // );
         // die(print_r($view));
         $view->is_cacheable = FALSE; 
-        $view->pre_execute();  
+        // $view->pre_execute();  
         $view->execute();
         print $view->render();
 
