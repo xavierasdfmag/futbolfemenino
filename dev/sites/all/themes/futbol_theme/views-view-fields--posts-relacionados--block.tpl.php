@@ -48,13 +48,13 @@
           // 0 => $tag
         // );
         // die(print_r($view));
+        $view->is_cacheable = FALSE;  
         $view->execute();
         print $view->render();
 
 
         // $view = views_get_view('view_machine_name');
         // $view->init_display('default');
-        // $view->is_cacheable = FALSE;  
         // $view->execute();
         // print $view->render();
       }  
