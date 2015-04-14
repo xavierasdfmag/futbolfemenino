@@ -36,7 +36,7 @@
       if ($tag != '') {
         function futbol_theme_views_pre_view(&$view) {
           if ($view->name == 'posts_relacionados_hijos') {
-            die(kpr($view->display['default']->handler->options['filters']));
+            die(print_r($view->display['default']->handler->options['filters']));
             $view->display['default']->handler->options['filters']['province']['value'] = $tag;
           }
         }
