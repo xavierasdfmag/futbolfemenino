@@ -40,7 +40,7 @@
         $view->display_handler->display->display_options['filters']['field_tag_tid']['value'] = array(
           0 => $tag
         );
-        die(print_r($view));
+        // die(print_r($view));
         $view->execute();
         print $view->render();
 
