@@ -5,11 +5,11 @@
   $path = $base_url.'/'.$theme_path;
   $pathfile = variable_get('file_public_path', conf_path() . '/files/'); 
 
-	kpr($fields);
-	// dpm($fields);
+  // dpm($fields);
   $title = $fields['title']->content;
   $views = $fields['view']->content;
   $tags = $fields['field_tag']->content;
+	print_r($tags);
   $llamada = $fields['field_llamada']->content;
   $image = $fields['field_imagen']->content;
   $count = $fields['counter']->content;
