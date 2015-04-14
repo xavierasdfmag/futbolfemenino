@@ -1,0 +1,7 @@
+name = Dynamc Views Filters
+description = Add new filters to a view dynamically.
+package = Views
+core = 7.x
+
+dependencies[] = views
+
