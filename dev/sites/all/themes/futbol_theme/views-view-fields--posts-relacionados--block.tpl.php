@@ -21,7 +21,7 @@
   <?php //if ($count == 1) : ?>
   <div class="row seccion-type-one">  
     <div class="small-12 columns">
-      <p class="title-section"><?php print $tags[0]; ?></p>
+      <p class="title-section"><?php print $tags; ?></p>
     </div>
     <div class="small-12 medium-8 columns">
       <h3 class="title-news"><?php print $title; ?></h3>
@@ -34,6 +34,7 @@
     <div class="small-12 medium-4 columns">
       <?php
       if ($tags != '') {
+        print $tags;
         $array = array($tags);
         $view = views_get_view('posts_relacionados_hijos');
         $view->set_display("block");
