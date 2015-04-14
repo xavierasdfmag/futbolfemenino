@@ -40,7 +40,7 @@
         $view->set_arguments($array);
         $view->pre_execute();
         $view->execute();
-        print = $view->render(); 
+        print $view->render(); 
       }  
       ?>
     </div>
