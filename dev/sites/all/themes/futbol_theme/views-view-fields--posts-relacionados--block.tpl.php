@@ -38,7 +38,7 @@
         $view = views_get_view('posts_relacionados_hijos');
         // print_r($view);`
         $view->execute();
-        $view->result;
+        print($view->result);
       }  
       ?>
     </div>
