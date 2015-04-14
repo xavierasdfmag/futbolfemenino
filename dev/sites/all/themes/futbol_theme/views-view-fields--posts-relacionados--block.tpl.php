@@ -35,7 +35,7 @@
       <?php
       if ($tag != '') {
         print('hola');
-        $display = 'default';
+        $display = 'block';
         $filter_name = 'tag';
         $view = views_get_view('posts_relacionados_hijos');
         $view->set_display($display);
