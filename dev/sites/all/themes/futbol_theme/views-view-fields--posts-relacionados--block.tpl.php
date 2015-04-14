@@ -34,7 +34,7 @@
     <div class="small-12 medium-4 columns">
       <?php
       if ($tags != '') {
-        $array = array('45+47');
+        $array = array($tags);
         $view = views_get_view('posts_relacionados_hijos');
         $view->set_display("block");
         $view->set_arguments($array);
