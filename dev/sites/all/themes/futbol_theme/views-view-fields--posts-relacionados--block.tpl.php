@@ -42,7 +42,7 @@
         $view->display_handler->display->display_options['filters']['field_tag_tid']['table'] = 'field_data_field_tag';
         $view->display_handler->display->display_options['filters']['field_tag_tid']['field'] = 'field_tag_tid';
         $view->display_handler->display->display_options['filters']['field_tag_tid']['value'] = array(
-          0 => $tag;  
+          0 => $tag,  
         );
         $view->display_handler->display->display_options['filters']['field_tag_tid']['vocabulary'] = 'tags';
         // $view->display_handler->display->display_options['filters']['field_tag_tid']['value'] = array(
