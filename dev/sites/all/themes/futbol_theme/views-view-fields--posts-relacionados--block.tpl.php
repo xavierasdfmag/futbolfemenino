@@ -9,7 +9,7 @@
 	// dpm($fields);
   $title = $fields['title']->content;
   $views = $fields['view']->content;
-  $tag = $fields['field_tag']->content;
+  $tags = $fields['field_tag']->content;
   $llamada = $fields['field_llamada']->content;
   $image = $fields['field_imagen']->content;
   $count = $fields['counter']->content;
@@ -21,7 +21,7 @@
   <?php //if ($count == 1) : ?>
   <div class="row seccion-type-one">  
     <div class="small-12 columns">
-      <p class="title-section"><?php print $tag; ?></p>
+      <p class="title-section"><?php print $tags[0]; ?></p>
     </div>
     <div class="small-12 medium-8 columns">
       <h3 class="title-news"><?php print $title; ?></h3>
@@ -33,8 +33,10 @@
     </div>
     <div class="small-12 medium-4 columns">
       <?php
-      if ($tag != '') {
-        
+      if ($tags != '') {
+        foreach ($tags as $key => $tag) {
+          print $tag;
+        }  
         $view = views_get_view('posts_relacionados_hijos');
         //$view->display_handler->display->display_options['filters']['field_tag_tid']['value'] = $tag;
         $view->set_display('block');
