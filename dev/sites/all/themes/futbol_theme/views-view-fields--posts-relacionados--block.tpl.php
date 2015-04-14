@@ -34,13 +34,7 @@
     <div class="small-12 medium-4 columns">
       <?php
       if ($tag != '') {
-        function futbol_theme_views_pre_view(&$view) {
-          if ($view->name == 'posts_relacionados_hijos') {
-            die(print_r($view->display['default']->handler->options['filters']));
-            $view->display['default']->handler->options['filters']['province']['value'] = $tag;
-          }
-        }
-        echo views_embed_view('posts_relacionados_hijos', $display_id = 'default');
+        print('hola');
       }  
       ?>
     </div>
