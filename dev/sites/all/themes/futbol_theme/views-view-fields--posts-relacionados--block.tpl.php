@@ -37,9 +37,16 @@
         
         $view = views_get_view('posts_relacionados_hijos');
         //$view->display_handler->display->display_options['filters']['field_tag_tid']['value'] = $tag;
+        $view->display_handler->display->display_options['filters']['field_tag_tid']['id'] = 'field_tag_tid';
+        $view->display_handler->display->display_options['filters']['field_tag_tid']['table'] = 'field_data_field_tag';
+        $view->display_handler->display->display_options['filters']['field_tag_tid']['field'] = 'field_tag_tid';
         $view->display_handler->display->display_options['filters']['field_tag_tid']['value'] = array(
-          0 => $tag
+          0 => $tag  
         );
+        $view->display_handler->display->display_options['filters']['field_tag_tid']['vocabulary'] = 'tags';
+        // $view->display_handler->display->display_options['filters']['field_tag_tid']['value'] = array(
+          // 0 => $tag
+        // );
         // die(print_r($view));
         $view->execute();
         print $view->render();
