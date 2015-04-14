@@ -36,9 +36,10 @@
       if ($tag != '') {
         print('hola');
         $view = views_get_view('posts_relacionados_hijos');
-        print_r($view);
-        $view->execute();
-        $response = $view->result;
+        // print_r($view);`
+        // $view->execute();
+        // $response = $view->result;
+        $view->execute_display()
       }  
       ?>
     </div>
