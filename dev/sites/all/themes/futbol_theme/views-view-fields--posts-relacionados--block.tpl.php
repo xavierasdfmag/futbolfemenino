@@ -35,6 +35,16 @@
       <?php
       if ($tag != '') {
         print('hola');
+        $display = 'default';
+        $filter_name = 'tag';
+        $view = views_get_view('posts_relacionados_hijos');
+        $view->set_display($display);
+        $view->set_items_per_page(3);
+        $filter = $view->get_item($view->current_display, 'filter', $filter_name);
+        $filter['value']['value'] = $tag;
+        $view->set_item($view->current_display, 'filter', $filter_name, $filter);
+        $view->execute();
+        $response = $view->result;
       }  
       ?>
     </div>
