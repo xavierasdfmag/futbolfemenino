@@ -1,0 +1,13 @@
+name = Ad report
+package = Ad
+dependencies[] = ad
+dependencies[] = chart
+description = Generates reports and charts from advertisement statistics.
+core = 7.x
+
+; Information added by Drupal.org packaging script on 2015-01-07
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "ad"
+datestamp = "1420656487"
+

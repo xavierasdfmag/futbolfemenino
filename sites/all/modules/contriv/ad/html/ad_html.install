@@ -1,0 +1,45 @@
+<?php
+
+/**
+ * @file
+ * Ad_html module database schema.
+ *
+ * Copyright (c) 2005-2009.
+ *   Jeremy Andrews <jeremy@tag1consulting.com>.
+ */
+
+/**
+ * Implements hook_schema().
+ */
+function ad_html_schema() {
+  $schema['ad_html'] = array(
+    'description' => 'The ad_html table stores HTML code of html ads.',
+    'fields' => array(
+      'aid' => array(
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+      'html' => array(
+        'type' => 'text',
+        'not null' => FALSE,
+      ),
+    ),
+    'primary key' => array('aid'),
+  );
+  return $schema;
+}
+
+/**
+ * Implements hook_uninstall().
+ *
+ * Allow complete uninstallation of the ad_html module.
+ */
+function ad_html_uninstall() {
+  // Delete all ad_html content.
+  $result = db_query("SELECT aid FROM {ad_html}");
+  while ($aid = $result->fetchField()) {
+    node_delete($aid);
+  }
+}

@@ -1,0 +1,12 @@
+name = Ad file cache
+package = Ad
+dependencies[] = ad_owners
+description = Provides a file-caching mechanism to improve ad serving performance.
+core = 7.x
+
+; Information added by Drupal.org packaging script on 2015-01-07
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "ad"
+datestamp = "1420656487"
+

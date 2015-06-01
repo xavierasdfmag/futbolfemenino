@@ -1,0 +1,24 @@
+name = futbolfemeninotheme
+description = Tema creado para la revista Futbol femenino.
+core = 7.x
+engine = phptemplate
+stylesheets[all][] = css/app.css
+scripts[] = js/vendor/jquery.js
+scripts[] = js/foundation.min.js.js
+scripts[] = js/app.js
+
+regions[header] = Header
+regions[highlighted] = Highlighted
+regions[help] = Help
+regions[content] = Content
+regions[sidebar_first] = Left sidebar
+regions[sidebar_second] = Right sidebar
+regions[footer] = Footer
+
+
+regions[left] = Left sidebar
+regions[right] = Right sidebar
+regions[content] = Content
+
+
+plugins[panels][layouts] = layouts

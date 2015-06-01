@@ -1,0 +1,11 @@
+name = Ad
+package = Ad
+dependencies[] = taxonomy
+description = An advertising system for Drupal powered websites.
+core = 7.x
+; Information added by Drupal.org packaging script on 2015-01-07
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "ad"
+datestamp = "1420656487"
+

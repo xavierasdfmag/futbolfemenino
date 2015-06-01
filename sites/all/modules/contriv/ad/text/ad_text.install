@@ -1,0 +1,56 @@
+<?php
+
+/**
+ * @file
+ * Ad_text module database schema.
+ *
+ * Copyright (c) 2005-2009.
+ *   Jeremy Andrews <jeremy@tag1consulting.com>.
+ */
+
+/**
+ * Implementation of hook_schema().
+ */
+function ad_text_schema() {
+  $schema['ad_text'] = array(
+    'description' => 'The ad_text table stores sources of text ads.',
+    'fields' => array(
+      'aid' => array(
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+      'url' => array(
+        'type' => 'varchar',
+        'length' => '255',
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'adheader' => array(
+        'type' => 'varchar',
+        'length' => '255',
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'adbody' => array(
+        'type' => 'text',
+        'not null' => FALSE,
+      ),
+    ),
+    'primary key' => array('aid'),
+  );
+
+  return $schema;
+}
+
+/**
+ * Allow complete uninstallation of the ad_text module.
+ */
+function ad_text_uninstall() {
+  // Delete all ad_text content.
+  $result = db_query("SELECT aid FROM {ad_text}");
+  while ($aid = $result->fetchField()) {
+    node_delete($aid);
+  }
+}
