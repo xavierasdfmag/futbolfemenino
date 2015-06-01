@@ -1,0 +1,51 @@
+<div class="settings" ng-controller="settingsCtrl">
+    <div class="bar-top">
+        <i class="fa fa-chevron-left" ng-click="admin.sidebar='core/html/sidebar.html'"></i>
+        <h1 translate="settings"></h1>
+        <a class="sidebar-close" ng-click="admin.showAdminPanel=false;admin.active=false;">
+            <i class="fa fa-times close"></i>
+        </a>
+    </div>
+    <div class="form-case">
+        <div class="half-width images">
+            <label for="logo" translate="logo"></label>
+            <img ng-src="{{settings.logo}}" ng-click="uploadPhoto('logo')">
+        </div>
+
+        <div class="half-width images">
+            <label for="favicon" translate="favicon"></label>
+            <img ng-src="{{settings.favicon}}" ng-click="uploadPhoto('favicon')">
+        </div>
+
+        <div class="half-width">
+            <label for="sitename" translate="settings_site_name"></label>
+            <input value="sitename" type='text' ng-model='settings.siteName' placeholder="e.g., Tom's Restaurant">
+        </div>
+
+        <div class="half-width">
+            <label for="slogan" translate="settings_slogan"></label>
+            <input value="slogan" type='textarea' ng-model='settings.slogan' placeholder="e.g., These pretzels are making me thirsty">
+        </div>
+
+        <div class="half-width">
+            <label for="email" translate="email"></label>
+            <input value="email" type='text' ng-model='settings.email' placeholder="info@cosmocms.org">
+        </div>
+
+        <div class="half-width">
+            <label for="maintenance" translate="settings_maintenance_url"></label>
+            <input value="maintenance" type='text' ng-model='settings.maintenanceURL' placeholder="/maintenance">
+        </div>
+
+        <div>
+            <input type="radio" ng-model="settings.language" value="en">
+            <label for="en" ng-click="changeLanguage('en');settings.language='en'">English</label>
+            <input type="radio" ng-model="settings.language" value="ru">
+            <label for="ru" ng-click="changeLanguage('ru');settings.language='ru'">русский язык</label>
+        </div>
+
+        <input type='checkbox' id="maintenance" ng-model='settings.maintenanceMode'>
+        <label class="maint-mode" for="maintenance" translate="settings_activate_maintenance"></label>
+        <button class="btn-success" ng-click='changeSettings()' translate="save"></button>
+    </div>
+</div>

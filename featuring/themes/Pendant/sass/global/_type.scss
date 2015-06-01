@@ -1,0 +1,161 @@
+$font-alpha: 'Open Sans', sans-serif;
+$font-beta: 'Lora', serif;
+
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+        @content;
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */
+        @content;
+    }
+
+    &::-moz-placeholder {  /* Firefox 19+ */
+        @content;
+    }
+
+    &:-ms-input-placeholder {
+        @content;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+code {
+    background-color: palette(gray, light);
+    border-radius: size(5);
+    color: palette(gray, mid);
+    display: block;
+    padding: size(10);
+}
+
+h1, h2, h3, h4, p, a {
+    font-family: $font-alpha;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 200;
+    margin-bottom: 1rem;
+
+    @media #{$bp-beta} {
+        font-size: 3rem;
+    }
+}
+
+h2 {
+    font-size: 1.6rem;
+    font-weight: 200;
+
+    @media #{$bp-beta} {
+        font-size: 1.8rem;
+    }
+}
+
+h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+
+    @media #{$bp-beta} {
+        font-size: 1.6rem;
+    }
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-weight: 200;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+
+    @media #{$bp-beta} {
+        font-size: 1.4rem;
+    }
+}
+
+h5 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+
+    @media #{$bp-beta} {
+        font-size: 1.2rem;
+    }
+}
+
+h6 {
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+
+    @media #{$bp-beta} {
+        font-size: 1.1rem;
+    }
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 1.75;
+
+    @media #{$bp-beta} {
+        font-size: 1.2rem;
+    }
+}
+
+blockquote {
+    border-left: 2px solid palette(gray, mid);
+    color: palette(gray, mid);
+    font-family: $font-beta;
+    font-size: 1.25rem;
+    font-style: italic;
+    line-height: 1.5;
+    margin: size(15) 0 size(15) size(15);
+    padding: size(25) 1.5rem;
+}
+
+small {
+    font-size: 85%;
+}
+
+a, button {
+    outline: none;
+}
+
+button {
+    border: 0;
+}
+
+a {
+    color: palette(gray, dark);
+    font-weight: 600;
+    text-decoration: none;
+    transition: .15s ease-in;
+
+    &:active, &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        color: palette(gray, mid);
+        cursor: pointer;
+    }
+}
+
+input {
+    font-family: $font-alpha;
+    font-weight: 200;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+img {
+    width: 100%;
+}
+
+::selection {
+       background-color: palette(gray, light);
+}

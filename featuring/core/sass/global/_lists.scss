@@ -1,0 +1,94 @@
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+        overflow: hidden;
+        padding: 1rem size(25);
+        text-overflow: ellipsis;
+
+        &:hover {
+            background-color: palette(gray, light);
+
+            a {
+                color: palette(blue, dark);
+            }
+
+            i {
+                color: palette(blue, light);
+            }
+        }
+
+        a {
+            color: palette(blue, dark);
+            display: block;
+        }
+
+        .active {
+            background-color: palette(blue, dark);
+            color: palette(blue, light);
+        }
+
+        .cos-select-half {
+            margin-bottom: 0;
+        }
+
+        p {
+            display: inline-block;
+            margin-bottom: 0;
+        }
+
+        i {
+            color: palette(blue, dark);
+            margin-right: .75rem;
+        }
+        //NEED TO CHANGE
+        small {
+
+            i {
+                margin-right: size(5);
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
+ul li ul {
+    background-color: palette(gray, light);
+    margin-left: -2.5rem;
+    width: 130%;
+
+    @media #{$bp-beta} {
+        width: 31rem;
+    }
+
+    li {
+        padding-left: 4.3rem;
+
+        &:first-child {
+            margin-top: 1rem;
+        }
+
+        &:hover {
+            background-color: palette(blue, light);
+
+            a {
+                color: palette(gray, light);
+            }
+
+            i {
+                color: palette(gray, light);
+            }
+        }
+
+        &:last-child {
+          margin-bottom: -1rem;
+        }
+    }
+}

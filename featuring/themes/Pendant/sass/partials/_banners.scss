@@ -1,0 +1,82 @@
+.banner--lrg {
+    background: center center no-repeat;
+    background-size: cover;
+    flex: $col-twelve;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    transition: .15s ease;
+
+    @media #{$bp-delta} {
+        height: 70vh;
+    }
+
+    h1, h3, h4 {
+        color: palette(gray, light);
+        font-weight: 200;
+    }
+
+    .article--title {
+        border: 0;
+        min-width: 20rem;
+        max-width: 68.75rem;
+        text-align: center;
+    }
+
+    .meta {
+        margin-bottom: 0;
+
+        a, i {
+            color: palette(gray, white);
+
+            &:hover {
+                color: palette(gray, mid--light);
+            }
+        }
+
+        .posted {
+            color: palette(gray, white);
+        }
+    }
+}
+
+.banner--sml {
+    @extend .banner--lrg;
+    height: 70vh;
+    margin: 0 auto;
+
+    @media #{$bp-delta} {
+        height: 50vh;
+    }
+}
+
+.banner--title {
+    flex: $col-twelve;
+    bottom: 1rem;
+    padding: 1.5rem 4%;
+    position: absolute;
+
+    @media #{$bp-epsilon} {
+        flex: 5;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    h1 {
+        color: palette(gray, white);
+        font-weight: 600;
+        margin-bottom: .25rem;
+    }
+
+    p {
+        display: none;
+
+        @media #{$bp-beta} {
+            color: palette(gray, white);
+            display: block;
+            font-size: 2rem;
+            font-weight: 200;
+            margin-bottom: 0;
+        }
+    }
+}
