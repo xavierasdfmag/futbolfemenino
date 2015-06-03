@@ -4,7 +4,7 @@
 
     # Core
     RewriteEngine On
-    RewriteBase /
+    RewriteBase /dev/featuring
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_URI} !^/uploads/
     RewriteRule ^ index.php [QSA]

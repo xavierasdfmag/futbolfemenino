@@ -1,5 +1,7 @@
 <?php
 
+define('COSMO_ROOT','/dev/featuring');
+
 /**
  * Cosmo class provides core functionality of the CMS
  */
@@ -364,6 +366,7 @@ class Cosmo {
     public function contentRead($url=NULL, $admin=NULL){
         if($url)
         {
+	    $url = str_replace(COSMO_ROOT,'',$url);
             // Remove the prefix from the URL
             if(!empty($this->prefix)){
                 $prefix = substr($this->prefix, 0, strlen($this->prefix)-1); // Remove trailing slash '/'
