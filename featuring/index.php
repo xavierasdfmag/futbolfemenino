@@ -84,7 +84,7 @@
                 
                 // Load files from the core/languages folder
                 $translateProvider.useStaticFilesLoader({
-                    prefix: '/core/languages/',
+                    prefix: '/<?php echo FOLDER; ?>/core/languages/',
                     suffix: '.json'
                 });
                 
@@ -141,7 +141,7 @@
 
                 // Cache all template pages
                 angular.forEach(Page.themePages, function(page){
-                    $templateCache.put('themes/<?php echo $theme; ?>/'+page);
+                    $templateCache.put('/<?php echo FOLDER; ?>/themes/<?php echo $theme; ?>/'+page);
                 });
 
             }]);
