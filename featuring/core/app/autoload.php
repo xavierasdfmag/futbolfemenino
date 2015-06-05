@@ -1,6 +1,6 @@
 <?php
 
-    $host = 'localhost';
+    $host = '104.236.14.59';
     $dbName = 'futbolfemenino_cosmo'; # Database name
     $username = 'root';
     $password = 'a2fN5VQ0rr';
