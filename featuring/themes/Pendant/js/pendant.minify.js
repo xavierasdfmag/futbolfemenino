@@ -1,3 +1,5 @@
+var FOLDER = 'dev/featuring/';
+
 angular.module('pendant', [])
 
 .controller('pendantCtrl', ['$scope', 'REST', 'Hooks', 'Responsive', function($scope, REST, Hooks, Responsive){
@@ -32,7 +34,7 @@ angular.module('pendant', [])
 .directive('onePost', ['REST', 'Hooks', 'Responsive', 'Page', function(REST, Hooks, Responsive, Page){
     return {
         scope: {},
-        templateUrl: 'themes/Pendant/partials/one.html',
+        templateUrl: FOLDER+'themes/Pendant/partials/one.html',
         link: function(scope, elm, attrs){
             scope.search = {};
             if(attrs.onePost)
@@ -66,7 +68,7 @@ angular.module('pendant', [])
 .directive('rowLeft', ['REST', 'Hooks', 'Responsive', function(REST, Hooks, Responsive){
     return {
         scope: {},
-        templateUrl: 'themes/Pendant/partials/row-left.html',
+        templateUrl: FOLDER+'themes/Pendant/partials/row-left.html',
         link: function(scope, elm, attrs){
             scope.search = {};
             if(attrs.rowLeft)
@@ -91,7 +93,7 @@ angular.module('pendant', [])
 .directive('rowRight', ['REST', 'Hooks', 'Responsive', function(REST, Hooks, Responsive){
     return {
         scope: {},
-        templateUrl: 'themes/Pendant/partials/row-right.html',
+        templateUrl: FOLDER+'themes/Pendant/partials/row-right.html',
         link: function(scope, elm, attrs){
             scope.search = {};
             if(attrs.rowRight)
@@ -116,7 +118,7 @@ angular.module('pendant', [])
 .directive('threePosts', ['REST', 'Hooks', 'Responsive', function(REST, Hooks, Responsive){
     return {
         scope: {},
-        templateUrl: 'themes/Pendant/partials/three.html',
+        templateUrl: FOLDER+'themes/Pendant/partials/three.html',
         link: function(scope, elm, attrs){
             scope.search = {};
             if(attrs.threePosts)
@@ -141,7 +143,7 @@ angular.module('pendant', [])
 .directive('threeBlock', ['REST', 'Hooks', 'Responsive', function(REST, Hooks, Responsive){
     return {
         scope: {},
-        templateUrl: 'themes/Pendant/partials/three-block.html',
+        templateUrl: FOLDER+'themes/Pendant/partials/three-block.html',
         link: function(scope, elm, attrs){
             scope.search = {};
             if(attrs.threeBlock)
@@ -166,7 +168,7 @@ angular.module('pendant', [])
 .directive('threeUniform', ['REST', 'Hooks', 'Responsive', function(REST, Hooks, Responsive){
     return {
         scope: {},
-        templateUrl: 'themes/Pendant/partials/three-uniform.html',
+        templateUrl: FOLDER+'themes/Pendant/partials/three-uniform.html',
         link: function(scope, elm, attrs){
             scope.search = {};
             if(attrs.threeUniform)
@@ -190,7 +192,7 @@ angular.module('pendant', [])
 
 .directive('captionLeftSmall', function(){
     return {
-        templateUrl: 'themes/Pendant/partials/caption-left-sml.html',
+        templateUrl: FOLDER+'themes/Pendant/partials/caption-left-sml.html',
         replace: true,
         link: function(scope, elm, attrs){
             scope.timestamp = new Date().getTime();
@@ -201,7 +203,7 @@ angular.module('pendant', [])
 
 .directive('captionRightSmall', function(){
     return {
-        templateUrl: 'themes/Pendant/partials/caption-right-sml.html',
+        templateUrl: FOLDER+'themes/Pendant/partials/caption-right-sml.html',
         replace: true,
         link: function(scope, elm, attrs){
             scope.timestamp = new Date().getTime();
@@ -212,7 +214,7 @@ angular.module('pendant', [])
 
 .directive('captionLeftMedium', function(){
     return {
-        templateUrl: 'themes/Pendant/partials/caption-left-med.html',
+        templateUrl: FOLDER+'themes/Pendant/partials/caption-left-med.html',
         replace: true,
         link: function(scope, elm, attrs){
             scope.timestamp = new Date().getTime();
@@ -223,7 +225,7 @@ angular.module('pendant', [])
 
 .directive('captionRightMedium', function(){
     return {
-        templateUrl: 'themes/Pendant/partials/caption-right-med.html',
+        templateUrl: FOLDER+'themes/Pendant/partials/caption-right-med.html',
         replace: true,
         link: function(scope, elm, attrs){
             scope.timestamp = new Date().getTime();
