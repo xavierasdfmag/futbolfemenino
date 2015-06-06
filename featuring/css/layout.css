@@ -1,0 +1,136 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+/* #Site Styles
+================================================== */
+
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+
+
+html * {
+	-webkit-font-smoothing: antialiased;
+	box-sizing: border-box;
+}
+body {
+	color: #3D3D3D;
+}
+h1, h2, h3, h4, p, i {
+	font-family: 'Open Sans',sans-serif;
+	font-weight: 300;
+}
+h1 {
+	margin-bottom: 20px;
+}
+p {
+	font-size: 1.5em;
+	line-height: 1.4em;
+}
+i {
+	font-style: italic;
+}
+a {
+	color: #1db4e9 !important;
+}
+
+/* #Page Styles
+================================================== */
+
+.blue {
+	background-color: #1db4e9;
+}
+
+.blue * {
+	color: white !important;
+}
+.bigphoto {
+	background: #1db4e9 url('../img/sweet_plums.jpg') no-repeat center center;
+	background-size: cover;
+	padding: 40px 0;
+}
+.bigphoto div.columns {
+	background: rgba(255,255,255,.8);
+	box-sizing: border-box;
+	border-radius: 20px;
+	padding: 20px 0;
+}
+.center {
+	text-align:center;
+}
+#logo img {
+	width: 100%;
+	max-width: 500px;  
+}
+.full {
+	width: 100%; 
+}
+.container {
+	padding: 4% 0;
+}
+.container img {
+	max-width: 100%;
+}
+#repeat img {
+	width: 100%; 
+}
+#repeat p {
+	font-size: 1.2em;
+	line-height: 1.4em;
+}
+#repeat .column {
+	height: 350px;
+	margin-bottom: 30px; 
+}
+#repeat .text {
+	padding: 10px; 
+}
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {}
+
+
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+
+/*	@font-face {
+	    font-family: 'FontName';
+	    src: url('../fonts/FontName.eot');
+	    src: url('../fonts/FontName.eot?iefix') format('eot'),
+	         url('../fonts/FontName.woff') format('woff'),
+	         url('../fonts/FontName.ttf') format('truetype'),
+	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+*/

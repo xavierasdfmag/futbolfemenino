@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>TidyCMS example page</title>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/skeleton.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="shortcut icon" href="img/tidycms-favicon.ico">
+<meta name="tidy:filepath" content="index.html">
+</head>
+<body>
+	
+	<div id="logo" class="blue full">
+		<div class="container center">
+		<img src="img/tidy-logo-large.png"><h3>Example page</h3>
+		</div>
+	</div>
+	<div id="welcome" class="container">
+		<div class="sixteen columns center">
+			<h1>Welcome to TidyCMS</h1>
+			<p>Unless you're already logged in to TidyCMS do that here: <a href="tidycms/">tidycms/</a></p>
+		</div>
+	</div>
+	<div class="bigphoto full imgup" id="tidyautoid-5">		
+		<div class="container">
+			<div class="sixteen columns center editable" id="tidyautoid-1">
+				<h1>I'm editable!</h1>
+				<p>If you're logged in you'll see blue borders around this element<br>That means that its content is editable.</p>
+				<p>You integrate TidyCMS to your site by adding classes to your elements.<br>This element is editable because it contains <i>class="editable"</i>.</p> 
+				<h3>To edit, just click me and start typing!</h3>		
+			</div>
+		</div>	
+	</div>
+	<div class="blue full">		
+		<div class="container">
+			<div class="twelve columns">
+				<img src="img/strawberry_cake_m.jpg" class="imgup" id="tidyautoid-3">
+</div>
+			<div class="four columns">
+				<p>You can upload a new image and replace this one because it has <i>class="imgup"</i></p>
+			</div>
+		</div>	
+	</div>				
+	<div id="repeat" class="container repeatable">
+		<div class="one-third column">
+			<img src="img/garlic.jpg"><div class="text">
+				<h4>Class="repeatable"</h4>
+				<p>If you add <i>class="repeatable"</i> to an element, its child elements can be cloned, removed and moved around.</p>
+			</div>	
+		</div>		
+		<div class="one-third column editable" id="tidyautoid-2">
+			<img src="img/tomato.jpg"><div class="text">
+				<h4>Repeatable + editable</h4>
+				<p>You can also combine classes. This elements parent has <i>repeatable</i> and the element itself has <i>editable</i></p> 
+			</div>	
+		</div>		
+		<div class="one-third column">
+			<img src="img/chilli.jpg" class="imgup" id="tidyautoid-4"><div class="text">
+				<h4>Repeatable + imgup</h4>
+				<p>Parent: <i>repeatable</i>, image above: <i>imgup</i>.</p>  
+			</div>	
+		</div>		
+	</div>
+	<div class="blue full">
+		<div class="container center">
+			<h1>Replace me, don't delete me!</h1>	
+			<p>TidyCMS doesn't work unless its parent folder contains at least one html file.</p>
+		</div>
+	</div>
+	<div class="container center">
+		<h3>TidyCMS offers ten times more than explained above.</h3>
+<h3>More details in the <a href="http://tidycms.com/docs" target="_blank">documentation</a>.</h3> 		 
+	</div>	
+</body>
+</html>

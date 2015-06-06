@@ -149,7 +149,7 @@
     </head>
     <body>
         <div ng-if="admin">
-            <div ng-include="'core/html/admin-panel.html'"></div>
+            <div ng-include="'/<?php echo FOLDER; ?>/core/html/admin-panel.html'"></div>
             <div cs-wysiwyg></div>
         </div>
         <div ng-view class="cosmo-theme"><?php echo $content['body']; ?></div>

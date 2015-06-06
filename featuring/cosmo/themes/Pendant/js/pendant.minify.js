@@ -1,4 +1,4 @@
-var FOLDER = 'dev/featuring/';
+var FOLDER = '/dev/featuring/';
 
 angular.module('pendant', [])
 
