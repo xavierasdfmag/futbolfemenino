@@ -6,6 +6,8 @@
  * the Panels Everywhere module.
  */
 ?>
+<div id="spot-im-root"></div>
+<script type="text/javascript">!function(t,o,p){function e(){var t=o.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"==o.location.protocol?"https":"http")+":"+p,o.body.appendChild(t)}t.spotId="d98fafe3e164615bf51c14d014cf90ac",t.spotName="",t.allowDesktop=!0,t.allowMobile=!1,t.containerId="spot-im-root",e()}(window.SPOTIM={},document,"//www.spot.im/embed/scripts/launcher.js");</script>
 <div class="row publicidad-header show-for-medium-up">
   <div class="medium-12 medium-centered columns text-center">
     <?php print render($content['publicidad-header']); ?>
