@@ -21,13 +21,13 @@
             $nombre = $field[$num]->field_titulo_usuario['und'][0]['value'];
             $link = $field[$num]->field_link_usuario['und'][0]['value'];
             switch ($nombre) {
-              case 'Ingresa':
+              /*case 'Ingresa':
                 $icon = '<span class="icon-user"></span>';
-                break;
+                break;*/
               case 'Suscribete':
                 $icon = '<span class="icon-user-plus"></span>';
                 break;
-              case 'Busca':
+              case 'Buscar':
                 $icon = '<span class="icon-search"></span>';
                 break;                                
               default:
@@ -36,7 +36,9 @@
             }            
           ?>
           <li>
-            <a href='<?php print $link ?>'><?php print $icon; ?><?php print $nombre ?></a>
+            <a <?php if($nombre == 'Buscar') echo "class='search-link'" ?> 
+              href='<?php print $link ?>'><?php print $icon; ?><?php print $nombre ?></a>
+            <?php if($nombre == 'Buscar') print drupal_render(drupal_get_form('search_block_form')) ?>
           </li>
         <?php endforeach; ?>  
       </ul>
