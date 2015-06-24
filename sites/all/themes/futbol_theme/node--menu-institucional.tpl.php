@@ -18,7 +18,7 @@
   
     </div>    
 
-    <div class="small-12 columns menu-institucional sticky">
+    <div class="small-12 columns menu-institucional contain-to-grid sticky">
       <div class="top-bar" data-topbar role="navigation">
       <ul class="inline-list left">
         <?php //foreach ($fids as $fid) : ?>

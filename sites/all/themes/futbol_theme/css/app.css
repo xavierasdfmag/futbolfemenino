@@ -6036,11 +6036,16 @@ th.hide-for-touch {
   .encabezado-header .menu-institucional {
     background: purple;
     padding: 7px; }
-    /*.encabezado-header .menu-institucional .nav-inner {
-      max-width: 1024px;
-      margin: 0 auto;
-      margin-bottom: 0;
-    }*/
+    .encabezado-header .menu-institucional .top-bar {
+      background: inherit;
+      height: auto;
+    }
+    .encabezado-header .menu-institucional .top-bar ul.right li a {
+      color: white !important;
+    }
+    .encabezado-header .menu-institucional .top-bar ul.right li {
+      display: none;
+    }
     .encabezado-header .menu-institucional a {
       color: #FFFFFF;
       font-family: 'Open Sans', sans-serif;
