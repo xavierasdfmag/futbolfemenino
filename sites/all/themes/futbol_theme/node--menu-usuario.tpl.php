@@ -43,6 +43,7 @@
         <?php endforeach; ?>  
       </ul>
       </div>
+    </div>
     <div class="small-12 columns logo">
       <?php $ruta_logo = theme_get_setting('logo', $GLOBALS['theme']); ?>
       <img src="<?php print $ruta_logo; ?>" >

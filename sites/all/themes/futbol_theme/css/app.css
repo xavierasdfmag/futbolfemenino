@@ -4339,6 +4339,8 @@ meta.foundation-mq-topbar {
   .contain-to-grid .top-bar {
     margin-bottom: 0; }
 
+.main-menu .fixed {
+  top: 32px; }
 .fixed {
   width: 100%;
   left: 0;
@@ -6032,8 +6034,13 @@ th.hide-for-touch {
     padding-right: 10px;
     padding-left: 10px; }
   .encabezado-header .menu-institucional {
-    padding: 7px;
-    display: none; }
+    background: purple;
+    padding: 7px; }
+    /*.encabezado-header .menu-institucional .nav-inner {
+      max-width: 1024px;
+      margin: 0 auto;
+      margin-bottom: 0;
+    }*/
     .encabezado-header .menu-institucional a {
       color: #FFFFFF;
       font-family: 'Open Sans', sans-serif;
@@ -6041,6 +6048,12 @@ th.hide-for-touch {
       font-size: 11px; }
     .encabezado-header .menu-institucional ul {
       margin-bottom: 0px; }
+  /*.encabezado-header .menu-institucional.nav-fixed {
+    width: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    z-index: 99; }*/
   .encabezado-header .logo {
     padding-bottom: 10px;
     padding-top: 10px; }
