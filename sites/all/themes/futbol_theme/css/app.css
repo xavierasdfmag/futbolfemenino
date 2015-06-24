@@ -6043,7 +6043,7 @@ th.hide-for-touch {
     .encabezado-header .menu-institucional .top-bar ul.right li a {
       color: white !important;
     }
-    .encabezado-header .menu-institucional .top-bar ul.right li {
+    .encabezado-header .menu-institucional .top-bar ul.right li form {
       display: none;
     }
     .encabezado-header .menu-institucional a {
