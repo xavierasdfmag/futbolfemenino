@@ -42,15 +42,26 @@ $(document).foundation({
 
 });
 
+$(document).ready(function(){
+  $('#search-link').click(function(e){
+    if($(this).hasClass('active'))
+    {
+      $(this).removeClass('active');
+      $(this).siblings('form').css('display','none');
+    }
+    else
+    {
+      $(this).addClass('active');
+      $(this).siblings('form').css('display','block');
+    }    
+  });
+});
+
 (function ($) {
   Drupal.behaviors.viewsInfiniteScroll = {
     attach: function (context, settings) {
       $(function(){
-
-
         var $container = $('div.recursivo');
-
-
         $container.imagesLoaded( function(){
           $container.infinitescroll({
             navSelector  : 'ul.pager',    // selector for the paged navigation

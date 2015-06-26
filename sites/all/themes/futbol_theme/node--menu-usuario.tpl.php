@@ -36,7 +36,7 @@
             }            
           ?>
           <li>
-            <a <?php if($nombre == 'Buscar') echo "class='search-link'" ?> 
+            <a <?php if($nombre == 'Buscar') echo "id='search-link'" ?> 
               href='<?php print $link ?>'><?php print $icon; ?><?php print $nombre ?></a>
             <?php if($nombre == 'Buscar') print drupal_render(drupal_get_form('search_block_form')) ?>
           </li>
