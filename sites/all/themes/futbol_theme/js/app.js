@@ -43,7 +43,9 @@ $(document).foundation({
 });
 
 $(document).ready(function(){
+  $('#search-link').siblings('form').find('input[type=text]').attr('placeholder','¿Qué es lo que buscas?');
   $('#search-link').click(function(e){
+    e.preventDefault();
     if($(this).hasClass('active'))
     {
       $(this).removeClass('active');
